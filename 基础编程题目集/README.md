@@ -1,5 +1,6 @@
 
 ## 函数题 (13/13)
+
 - [6-1. 简单输出整数](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E5%87%BD%E6%95%B0%E9%A2%98/6-1%20%E7%AE%80%E5%8D%95%E8%BE%93%E5%87%BA%E6%95%B4%E6%95%B0.c)
 - [6-2. 多项式求值](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E5%87%BD%E6%95%B0%E9%A2%98/6-2%20%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%B1%82%E5%80%BC.c)
 - [6-3. 简单求和](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E5%87%BD%E6%95%B0%E9%A2%98/6-3%20%E7%AE%80%E5%8D%95%E6%B1%82%E5%92%8C.c)
@@ -15,6 +16,7 @@
 - [6-13. 折半查找](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E5%87%BD%E6%95%B0%E9%A2%98/6-13%20%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE.cpp)
 
 ## 编程题 (38/38)
+
 - [7-1. 厘米换算英尺英寸](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E7%BC%96%E7%A8%8B%E9%A2%98/7-1%20%E5%8E%98%E7%B1%B3%E6%8D%A2%E7%AE%97%E8%8B%B1%E5%B0%BA%E8%8B%B1%E5%AF%B8.cpp)
 - [7-2. 然后是几点](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E7%BC%96%E7%A8%8B%E9%A2%98/7-2%20%E7%84%B6%E5%90%8E%E6%98%AF%E5%87%A0%E7%82%B9.cpp)
 - [7-3. 逆序的三位数](https://github.com/jinzcdev/PTA/blob/main/%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9B%AE%E9%9B%86/%E7%BC%96%E7%A8%8B%E9%A2%98/7-3%20%E9%80%86%E5%BA%8F%E7%9A%84%E4%B8%89%E4%BD%8D%E6%95%B0.cpp)
