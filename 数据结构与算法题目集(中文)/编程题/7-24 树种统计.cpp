@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/839
+// https://pintia.cn/problem-sets/15/exam/problems/839
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

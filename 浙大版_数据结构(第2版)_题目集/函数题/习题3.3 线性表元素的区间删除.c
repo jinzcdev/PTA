@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/966247795744329728
+// https://pintia.cn/problem-sets/434/exam/problems/966247795744329728
 List Delete(List L, ElementType minD, ElementType maxD) {
     Position Len = 0;
     for (int i = 0; i <= L->Last; i++) {

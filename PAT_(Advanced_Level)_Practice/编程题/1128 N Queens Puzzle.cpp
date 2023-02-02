@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805348915855360
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805348915855360
 #include <bits/stdc++.h>
 using namespace std;
 bool ispeace(vector<int> &chess) {

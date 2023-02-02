@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/592
+// https://pintia.cn/problem-sets/13/exam/problems/592
 char *match(char *s, char ch1, char ch2) {
     int pos1 = 0, pos2 = 0, len = 0;
     while (s[len] != '\0') len++;

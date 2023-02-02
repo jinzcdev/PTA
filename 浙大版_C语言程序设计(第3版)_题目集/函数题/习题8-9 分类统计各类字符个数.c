@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/343
+// https://pintia.cn/problem-sets/12/exam/problems/343
 void StringCount( char *s ) {
     int cnt[6] = {0};
     for (int i = 0; i < strlen(s); i++) {

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/710
+// https://pintia.cn/problem-sets/15/exam/problems/710
 #include <bits/stdc++.h>
 using namespace std;
 int polyProduct[2010], polySum[1010], poly[1010];

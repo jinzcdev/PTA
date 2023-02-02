@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/798
+// https://pintia.cn/problem-sets/14/exam/problems/798
 #include <bits/stdc++.h>
 using namespace std;
 vector<double> v(4);

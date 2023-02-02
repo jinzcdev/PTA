@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/803
+// https://pintia.cn/problem-sets/14/exam/problems/803
 #include <bits/stdc++.h>
 using namespace std;
 char decimals[] = {'Q', 'B', 'S'}, units[] = {'Y', 'W'};

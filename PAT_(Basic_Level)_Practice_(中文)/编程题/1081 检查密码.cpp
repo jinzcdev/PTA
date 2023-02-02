@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805261217153024
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805261217153024
 #include <iostream>
 #include <cctype>
 using namespace std;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/994805128870084608
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805128870084608
 #include <cstdio>
 #include <cmath>
 int main() {

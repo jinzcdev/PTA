@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805268817231872
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805268817231872
 #include<cstdio>
 int main(){
   int a[110][110]={0};

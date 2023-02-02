@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805444361437184
 #include <cstdio>
 const int maxn = 100010;
 int num[maxn], exist[maxn] = {0};

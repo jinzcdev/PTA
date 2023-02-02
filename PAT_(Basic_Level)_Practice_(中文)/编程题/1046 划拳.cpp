@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805277847568384
 #include <cstdio>
 int main(){
     int n, cntA = 0, cntB = 0;

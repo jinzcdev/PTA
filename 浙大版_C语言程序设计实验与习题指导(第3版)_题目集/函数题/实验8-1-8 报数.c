@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/549
+// https://pintia.cn/problem-sets/13/exam/problems/549
 void CountOff(int n, int m, int out[]) {
     int idx = 0, num = 0, i = 0, is_out[MAXN] = {0}, cnt = 0;
     while (cnt != n) {

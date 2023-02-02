@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805365537882112
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805365537882112
 #include <cstdio>
 #include <queue>
 using namespace std;

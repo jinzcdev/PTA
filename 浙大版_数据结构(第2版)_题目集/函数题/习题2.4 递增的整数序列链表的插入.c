@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/5726
+// https://pintia.cn/problem-sets/434/exam/problems/5726
 List Insert(List L, ElementType X) {
     PtrToNode p = L;
     while (p->Next != NULL && p->Next->Data < X) p = p->Next;

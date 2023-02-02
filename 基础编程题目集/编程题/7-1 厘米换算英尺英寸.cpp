@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/781
+// https://pintia.cn/problem-sets/14/exam/problems/781
 #include <cstdio>
 int main() {
     int cm, foot, inch;

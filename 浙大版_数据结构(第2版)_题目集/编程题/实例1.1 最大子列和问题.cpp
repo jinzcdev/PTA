@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/5404
+// https://pintia.cn/problem-sets/434/exam/problems/5404
 #include <cstdio>
 const int N = 100010;
 int main() {

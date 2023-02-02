@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/800
+// https://pintia.cn/problem-sets/14/exam/problems/800
 #include <cstdio>
 int main() {
     int n;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805406352654336
 /**
  * 题目给定的数值范围为8字节, 刚好与long long类型匹配,
  * 但两数相加减存在溢出的情况, 于是如果a,b均为正但a+b<0则说明溢出,a+b的实际大小必定>c, a,b均为负的情况与此相同.

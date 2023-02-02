@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/problems/994805070149828608
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805070149828608
 n = int(input())
 d = {}
 for i in range(n):

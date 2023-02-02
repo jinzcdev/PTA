@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805300404535296
 #include <cstdio>
 #include <cstring>
 char n[1010];

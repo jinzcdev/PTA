@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/825
+// https://pintia.cn/problem-sets/15/exam/problems/825
 #include <bits/stdc++.h>
 using namespace std;
 int pop(queue<int> &q) {

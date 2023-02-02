@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6096
+// https://pintia.cn/problem-sets/434/exam/problems/6096
 bool Push(ElementType X, Deque D) {
     if ((D->Rear + 1) % D->MaxSize == D->Front) {
         return false;

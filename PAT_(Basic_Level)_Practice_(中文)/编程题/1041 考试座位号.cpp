@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805281567916032
 #include <cstdio>
 #include <vector>
 using namespace std;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/340
+// https://pintia.cn/problem-sets/12/exam/problems/340
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

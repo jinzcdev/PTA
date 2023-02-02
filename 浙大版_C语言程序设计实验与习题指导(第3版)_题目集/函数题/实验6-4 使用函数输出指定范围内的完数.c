@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/476
+// https://pintia.cn/problem-sets/13/exam/problems/476
 int factorsum(int number) {
     int sqr = 1, sum = 0;
     while (sqr * sqr < number) sqr++;

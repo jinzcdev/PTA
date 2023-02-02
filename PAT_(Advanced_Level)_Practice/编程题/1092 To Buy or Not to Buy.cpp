@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805374509498368
 #include <iostream>
 using namespace std;
 const int maxn = 1010;

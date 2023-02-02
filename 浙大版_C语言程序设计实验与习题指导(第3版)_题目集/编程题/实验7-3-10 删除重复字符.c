@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/529
+// https://pintia.cn/problem-sets/13/exam/problems/529
 #include <stdio.h>
 #include <stdlib.h>
 int cmp(const void *a, const void *b) { return *((char *)a) - *((char *)b); }

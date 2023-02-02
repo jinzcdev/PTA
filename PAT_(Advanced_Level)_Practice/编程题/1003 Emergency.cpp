@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805523835109376
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805523835109376
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 510, INF = 0x7FFFFFF;
@@ -79,7 +79,7 @@ bool vis[N] = {false};
 void dijkstra(int s){
     fill(d, d + n, INF);    // 用无穷大表示起点s->all都无路径
     d[s] = 0;               // s->s的最短距离为0
-    w[s] = weight[s];       // s->s的最小点权和为0
+    w[s] = weight[s];       // s->s的最小点权和为0
     num[s] = 1;             // s->s的最短路径个数为1
     for (int i = 0; i < n; i++){        // 循环n次, 每一次都从离上个起点最近的点开始继续向下记录
         int u = -1, MIN = INF;          // 最小值取INF, 只要小于INF则表示连通

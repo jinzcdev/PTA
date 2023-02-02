@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/1518581337161646080
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/1518581337161646080
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

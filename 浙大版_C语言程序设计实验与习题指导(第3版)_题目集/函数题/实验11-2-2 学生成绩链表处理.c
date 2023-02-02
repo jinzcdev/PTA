@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/602
+// https://pintia.cn/problem-sets/13/exam/problems/602
 struct stud_node *createlist() {
     struct stud_node *L = (struct stud_node *)malloc(sizeof(struct stud_node)), *r = L;
     L->next = NULL;

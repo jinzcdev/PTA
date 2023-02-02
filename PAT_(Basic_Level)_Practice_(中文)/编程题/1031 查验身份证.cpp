@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805290334011392
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805290334011392
 #include <cstdio>
 
 int w[] = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2};

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805364711604224
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805364711604224
 #include <bits/stdc++.h>
 using namespace std;
 int n, k, p, maxFacSum = -1;

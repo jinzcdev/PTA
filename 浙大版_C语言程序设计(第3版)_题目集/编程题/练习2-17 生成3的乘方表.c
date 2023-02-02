@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/249
+// https://pintia.cn/problem-sets/12/exam/problems/249
 #include <stdio.h>
 int main() {
     int n, sum = 1;

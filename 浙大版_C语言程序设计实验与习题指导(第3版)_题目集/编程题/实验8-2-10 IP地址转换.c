@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/543
+// https://pintia.cn/problem-sets/13/exam/problems/543
 #include <stdio.h>
 int main() {
     char s[35];

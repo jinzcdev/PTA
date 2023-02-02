@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/606
+// https://pintia.cn/problem-sets/13/exam/problems/606
 int countcs( struct ListNode *head ) {
     int cnt = 0;
     struct ListNode *p = head;

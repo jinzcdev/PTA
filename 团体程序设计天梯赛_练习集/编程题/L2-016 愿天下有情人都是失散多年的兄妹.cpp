@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/994805061769609216
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805061769609216
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 100010;
@@ -86,9 +86,8 @@ int main() {
 }
 */
 
-/* @pintia node=start
-- 解法 1:
+/* @pintia note=start
 把父母结点作为孩子结点. 查询a, b是否在五服内:
 1. 从 a 开始遍历, 标记所有深度为 5 以内的祖先
 2. 从 b 开始遍历深度为 5 以内的所有祖先, 如果有祖先被标记过则说明二者在五服之内
-@pintia node=end */
+@pintia note=end */

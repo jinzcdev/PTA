@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/593
+// https://pintia.cn/problem-sets/13/exam/problems/593
 #include <string.h>
 char *search(char *s, char *t) {
     int len_s = strlen(s), len_t = strlen(t);

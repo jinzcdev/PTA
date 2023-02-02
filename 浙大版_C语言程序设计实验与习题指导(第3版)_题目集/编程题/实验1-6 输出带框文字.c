@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/256
+// https://pintia.cn/problem-sets/13/exam/problems/256
 #include <stdio.h>
 int main() {
     printf("************\n  Welcome\n************");

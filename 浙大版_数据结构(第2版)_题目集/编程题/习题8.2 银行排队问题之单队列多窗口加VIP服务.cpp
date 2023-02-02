@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6516
+// https://pintia.cn/problem-sets/434/exam/problems/6516
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1010;
@@ -85,7 +85,9 @@ int main() {
     }
     return 0;
 }
-/*
+
+/* @pintia note=start
+
 freeWins[] = 最早空闲的窗口 (可能有多个窗口同时空闲)
 if 队首的客户在 freeWins 空闲之前到达 (即当 freeWins 空闲的时候至少有一个用户在排队):
     if 如果有vipWin窗口空闲, 队列中也有vipCli用户: vipWin 服务 vipCli
@@ -95,4 +97,5 @@ else: // 即没有用户等待, 当有用户到达时，至少一个窗口空闲
     users[] = 最早同时到达的用户
     if users中有vip用户 && wins中有vip窗口: vip窗口 服务 vip用户
     else: 序号最小的用户去序号最小的窗口
-*/
+
+@pintia note=end */

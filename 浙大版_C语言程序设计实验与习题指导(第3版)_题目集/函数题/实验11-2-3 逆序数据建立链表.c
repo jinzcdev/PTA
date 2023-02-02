@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/603
+// https://pintia.cn/problem-sets/13/exam/problems/603
 struct ListNode *createlist() {
     struct ListNode* L = (struct ListNode*)malloc(sizeof(struct ListNode));
     L->next = NULL;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/1085
+// https://pintia.cn/problem-sets/16/exam/problems/1085
 int known[MaxVertexNum];
 
 void ShortestDist(MGraph Graph, int dist[], int count[], Vertex S) {

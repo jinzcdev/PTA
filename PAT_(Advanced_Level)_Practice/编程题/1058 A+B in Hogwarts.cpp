@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805416519647232
 #include <cstdio>
 int a[3] = {0}, b[3] = {0};
 int d[3] = {10, 17, 29};

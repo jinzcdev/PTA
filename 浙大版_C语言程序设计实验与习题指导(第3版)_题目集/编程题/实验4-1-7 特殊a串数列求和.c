@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/441
+// https://pintia.cn/problem-sets/13/exam/problems/441
 #include <stdio.h>
 int main() {
     int a, n, temp = 0;

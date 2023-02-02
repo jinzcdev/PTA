@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/360
+// https://pintia.cn/problem-sets/12/exam/problems/360
 int getindex( char *s ) {
     int ans = -1;
     if (strcmp(s, "Sunday") == 0) return 0;

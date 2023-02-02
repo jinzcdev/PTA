@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/363
+// https://pintia.cn/problem-sets/12/exam/problems/363
 char *match(char *s, char ch1, char ch2) {
     char *p = s;
     while (*p != '\0' && *p != ch1) p++;

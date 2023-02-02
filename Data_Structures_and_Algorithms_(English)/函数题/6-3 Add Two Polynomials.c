@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/698
+// https://pintia.cn/problem-sets/16/exam/problems/698
 Polynomial Add(Polynomial a, Polynomial b) {
     Polynomial P = (Polynomial)malloc(sizeof(struct Node)), s = P;
     P->Next = NULL;

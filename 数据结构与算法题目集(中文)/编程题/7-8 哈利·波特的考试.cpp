@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/716
+// https://pintia.cn/problem-sets/15/exam/problems/716
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 110, INF = INT_MAX;

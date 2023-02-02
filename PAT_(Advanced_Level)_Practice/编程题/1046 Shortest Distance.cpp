@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805435700199424
 #include <iostream>
 using namespace std;
 const int N = 100010;

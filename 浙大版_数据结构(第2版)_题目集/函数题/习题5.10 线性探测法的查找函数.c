@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6182
+// https://pintia.cn/problem-sets/434/exam/problems/6182
 Position Find(HashTable H, ElementType Key) {
     for (int i = 0; i < H->TableSize; i++) {
         Position pos = Hash(Key + i, H->TableSize);

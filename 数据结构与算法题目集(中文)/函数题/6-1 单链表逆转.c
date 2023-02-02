@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/724
+// https://pintia.cn/problem-sets/15/exam/problems/724
 List Reverse(List L) {
     if (!L || L->Next == NULL) return L;
     List nextNode = L->Next;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/91827364500/problems/91827370501
+// https://pintia.cn/problem-sets/91827364500/exam/problems/91827370501
 #include <cstdio>
 int main() {
   int t, n;

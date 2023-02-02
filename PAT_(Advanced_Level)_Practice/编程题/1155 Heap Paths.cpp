@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/1071785408849047552
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/1071785408849047552
 #include <cstdio>
 #include <queue>
 #include <vector>

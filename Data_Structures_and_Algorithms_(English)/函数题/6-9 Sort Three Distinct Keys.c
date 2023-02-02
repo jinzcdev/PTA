@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/704
+// https://pintia.cn/problem-sets/16/exam/problems/704
 void MySort(ElementType A[], int N) {
     int cntMaybe = 0, pos = 0;
     for (int i = 0; i < N; i++) {

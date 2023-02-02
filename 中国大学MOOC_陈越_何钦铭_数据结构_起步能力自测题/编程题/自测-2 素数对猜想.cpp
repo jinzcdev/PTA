@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/17/problems/261
+// https://pintia.cn/problem-sets/17/exam/problems/261
 #include <cstdio>
 bool isPrime(int x) {
     if (x <= 1) return false;

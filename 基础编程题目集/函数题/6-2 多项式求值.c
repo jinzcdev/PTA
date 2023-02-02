@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/734
+// https://pintia.cn/problem-sets/14/exam/problems/734
 /*
 double f( int n, double a[], double x ) {
     double ans = 0;

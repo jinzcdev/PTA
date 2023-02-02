@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/714
+// https://pintia.cn/problem-sets/15/exam/problems/714
 #include <bits/stdc++.h>
 using namespace std;
 int e[10][10], n, m;

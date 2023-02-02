@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805373582557184
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805373582557184
 #include <cstdio>
 using namespace std;
 const int MOD=1e9+7;

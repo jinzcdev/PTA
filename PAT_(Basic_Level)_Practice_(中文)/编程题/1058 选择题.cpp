@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805270356541440
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805270356541440
 #include <cstdio>
 #include <algorithm>
 using namespace std;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/565
+// https://pintia.cn/problem-sets/13/exam/problems/565
 #include <stdio.h>
 int main() {
     double a, b, c, d;

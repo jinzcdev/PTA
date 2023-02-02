@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/17/problems/263
+// https://pintia.cn/problem-sets/17/exam/problems/263
 #include <cstdio>
 #include <cstring>
 const int maxn = 25;

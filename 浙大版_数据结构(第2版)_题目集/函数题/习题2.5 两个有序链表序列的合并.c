@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/5803
+// https://pintia.cn/problem-sets/434/exam/problems/5803
 List Merge(List L1, List L2) {
     List L = (List)malloc(sizeof(struct Node));
     L->Next = NULL;

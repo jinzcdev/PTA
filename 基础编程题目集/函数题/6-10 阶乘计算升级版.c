@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/742
+// https://pintia.cn/problem-sets/14/exam/problems/742
 void Print_Factorial(const int N) {
     if (N < 0)
         printf("Invalid input\n");

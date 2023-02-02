@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/1071785190929788928
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/1071786104348536832
 #include <bits/stdc++.h>
 using namespace std;
 struct stu {

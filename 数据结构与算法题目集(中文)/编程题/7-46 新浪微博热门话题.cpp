@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/893
+// https://pintia.cn/problem-sets/15/exam/problems/893
 #include <bits/stdc++.h>
 using namespace std;
 struct node {

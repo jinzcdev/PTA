@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805454989803520
 #include <bits/stdc++.h>
 using namespace std;
 string convert(string s) {

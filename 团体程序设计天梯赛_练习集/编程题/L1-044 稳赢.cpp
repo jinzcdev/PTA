@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/994805086365007872
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805086365007872
 #include <bits/stdc++.h>
 using namespace std;
 string win(string s) {

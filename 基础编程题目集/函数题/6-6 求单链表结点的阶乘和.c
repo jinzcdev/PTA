@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/738
+// https://pintia.cn/problem-sets/14/exam/problems/738
 int FactorialSum( List L ) {
     List p = L;
     int ans = 0, i;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/3001
+// https://pintia.cn/problem-sets/15/exam/problems/3001
 #include <bits/stdc++.h>
 using namespace std;
 int findMedianSortedArrays1(vector<int>& num1, vector<int>& num2) {

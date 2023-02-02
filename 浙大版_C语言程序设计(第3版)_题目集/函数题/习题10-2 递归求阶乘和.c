@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/352
+// https://pintia.cn/problem-sets/12/exam/problems/352
 double fact( int n ) {
     if (n <= 1) return 1;
     return n * fact(n - 1);

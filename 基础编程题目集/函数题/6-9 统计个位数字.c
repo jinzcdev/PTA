@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/741
+// https://pintia.cn/problem-sets/14/exam/problems/741
 int Count_Digit ( const int N, const int D ) {
     if (N < 0) return Count_Digit(-N, D);
     if (N < 10) return N == D ? 1 : 0;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/713
+// https://pintia.cn/problem-sets/15/exam/problems/713
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> heap;

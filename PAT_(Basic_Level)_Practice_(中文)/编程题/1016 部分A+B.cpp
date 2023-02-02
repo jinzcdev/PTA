@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805306310115328
 #include<cstdio>
 int main(){
   long long a,b,pa=0,pb=0;

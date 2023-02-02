@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/311
+// https://pintia.cn/problem-sets/12/exam/problems/311
 int dp[10010] = {0};
 int fib(int n) {
     if (dp[n] != 0) return dp[n];

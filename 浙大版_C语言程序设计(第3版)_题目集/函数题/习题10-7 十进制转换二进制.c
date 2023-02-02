@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/357
+// https://pintia.cn/problem-sets/12/exam/problems/357
 void dectobin( int n ) {
     if (n <= 1) {
         printf("%d", n);

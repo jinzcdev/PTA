@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/466
+// https://pintia.cn/problem-sets/13/exam/problems/466
 int CountDigit(int number, int digit) {
     int cnt = 0;
     if (number == 0 && digit == 0) return 1;

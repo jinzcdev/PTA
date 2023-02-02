@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805389634158592
 #include <bits/stdc++.h>
 using namespace std;
 bool isprime(int x) {

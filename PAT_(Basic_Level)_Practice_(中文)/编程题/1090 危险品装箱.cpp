@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/1038429484026175488
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/1038429484026175488
 #include <iostream>
 #include <map>
 #include <vector>

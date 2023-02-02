@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805378443755520
 #include <iostream>
 #define ll long long
 using namespace std;

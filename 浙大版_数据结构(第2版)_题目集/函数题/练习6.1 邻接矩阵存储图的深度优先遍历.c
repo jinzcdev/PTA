@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6472
+// https://pintia.cn/problem-sets/434/exam/problems/6472
 void DFS(MGraph Graph, Vertex V, void (*Visit)(Vertex)) {
     Visited[V] = true;
     Visit(V);

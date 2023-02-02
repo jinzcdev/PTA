@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/1111652100718116864/problems/1163035698160459776
+# https://pintia.cn/problem-sets/1111652100718116864/exam/problems/1163035698160459776
 # def fn(a, n):
 #     sum = 0
 #     tmp = 0

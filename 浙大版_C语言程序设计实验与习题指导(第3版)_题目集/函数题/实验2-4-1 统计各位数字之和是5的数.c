@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/411
+// https://pintia.cn/problem-sets/13/exam/problems/411
 int is( int number ) {
     int sum = 0;
     while (number != 0) {

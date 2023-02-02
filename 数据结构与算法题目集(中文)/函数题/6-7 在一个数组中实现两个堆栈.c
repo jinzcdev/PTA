@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/730
+// https://pintia.cn/problem-sets/15/exam/problems/730
 Stack CreateStack(int MaxSize) {
     Stack S = (Stack)malloc(sizeof(struct SNode));
     S->Data = (ElementType *)malloc(sizeof(ElementType) * MaxSize);

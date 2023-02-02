@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805345078067200
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805345078067200
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> pre, in;

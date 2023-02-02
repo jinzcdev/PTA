@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805526272000000
 #include <cstdio>
 int main() {
     double p[1010] = {0}, c;

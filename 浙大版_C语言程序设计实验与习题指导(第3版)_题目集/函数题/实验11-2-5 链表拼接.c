@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/605
+// https://pintia.cn/problem-sets/13/exam/problems/605
 struct ListNode *mergelists(struct ListNode *list1, struct ListNode *list2) {
     struct ListNode *l = (struct ListNode*)malloc(sizeof(struct ListNode));
     l->next = NULL;

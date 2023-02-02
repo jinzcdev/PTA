@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/365
+// https://pintia.cn/problem-sets/12/exam/problems/365
 struct ListNode *readlist() {
     struct ListNode* head = (struct ListNode*)malloc(sizeof(struct ListNode));
     head->next = NULL;

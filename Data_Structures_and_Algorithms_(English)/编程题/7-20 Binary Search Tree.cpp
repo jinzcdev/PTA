@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/682
+// https://pintia.cn/problem-sets/16/exam/problems/682
 // 4 2
 // 3 1 4 2
 // 3 4 1 2

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/923
+// https://pintia.cn/problem-sets/15/exam/problems/923
 Position BinarySearch(List L, ElementType X) {
     int left = 1, right = L->Last, mid, ans = -1;
     while(left <= right){

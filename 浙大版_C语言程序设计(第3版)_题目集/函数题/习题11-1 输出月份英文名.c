@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/359
+// https://pintia.cn/problem-sets/12/exam/problems/359
 char month[][15] = {"January",   "February", "March",    "April",
                     "May",       "June",     "July",     "August",
                     "September", "October",  "November", "December"};

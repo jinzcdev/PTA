@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652365
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652365
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 110;

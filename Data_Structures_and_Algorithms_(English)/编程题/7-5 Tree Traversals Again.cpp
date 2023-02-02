@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/667
+// https://pintia.cn/problem-sets/16/exam/problems/667
 #include <bits/stdc++.h>
 using namespace std;
 int n, cnt = 0;

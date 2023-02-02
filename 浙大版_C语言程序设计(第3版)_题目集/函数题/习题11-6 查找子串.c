@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/364
+// https://pintia.cn/problem-sets/12/exam/problems/364
 char *search( char *s, char *t ) {
     int slen = strlen(s), tlen = strlen(t);
     for (int i = 0; i <= slen - tlen; i++) {

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805470349344768
 #include <cstdio>
 char change(int x){
     if (x > 9){

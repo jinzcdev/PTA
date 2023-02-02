@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/722
+// https://pintia.cn/problem-sets/15/exam/problems/722
 #include <bits/stdc++.h>
 using namespace std;
 int n, maxCnt = 0, cntName = 1;

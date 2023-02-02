@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/problems/304
+// https://pintia.cn/problem-sets/12/exam/problems/304
 int prime( int p ) {
     if (p <= 1) return 0;
     for (int i = 2; i * i <= p; i++)

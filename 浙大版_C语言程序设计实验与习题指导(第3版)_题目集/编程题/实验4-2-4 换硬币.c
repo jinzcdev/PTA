@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/449
+// https://pintia.cn/problem-sets/13/exam/problems/449
 #include <stdio.h>
 int main() {
     int n, cnt = 0;

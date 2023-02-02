@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/5869
+// https://pintia.cn/problem-sets/434/exam/problems/5869
 #include <bits/stdc++.h>
 using namespace std;
 bool is_left(string s) { return s == "(" || s == "[" || s == "{" || s == "/*"; }

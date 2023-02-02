@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/700
+// https://pintia.cn/problem-sets/16/exam/problems/700
 typedef struct StackRecord *Stack;
 struct StackRecord {
     double Array[Max_Expr];

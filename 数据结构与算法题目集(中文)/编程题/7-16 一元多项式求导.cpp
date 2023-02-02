@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/820
+// https://pintia.cn/problem-sets/15/exam/problems/820
 #include <cstdio>
 int main() {
     // freopen("in", "r", stdin);

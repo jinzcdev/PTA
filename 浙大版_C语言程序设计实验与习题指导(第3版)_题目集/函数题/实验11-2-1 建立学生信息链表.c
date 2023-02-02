@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/601
+// https://pintia.cn/problem-sets/13/exam/problems/601
 void input() {
     struct stud_node *L = (struct stud_node *)malloc(sizeof(struct stud_node));
     L->next = NULL;

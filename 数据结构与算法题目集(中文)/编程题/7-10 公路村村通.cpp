@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/718
+// https://pintia.cn/problem-sets/15/exam/problems/718
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1010, INF = 0x3f3f3f3f;

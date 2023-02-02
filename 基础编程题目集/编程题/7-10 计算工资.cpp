@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/790
+// https://pintia.cn/problem-sets/14/exam/problems/790
 #include <cstdio>
 double solve(int year, int t) {
     int salary = year < 5 ? 30 : 50;

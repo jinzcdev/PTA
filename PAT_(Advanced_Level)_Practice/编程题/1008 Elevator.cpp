@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805511923286016
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805511923286016
 #include <cstdio>
 int main() {
     int n, total = 0, now = 0, to;

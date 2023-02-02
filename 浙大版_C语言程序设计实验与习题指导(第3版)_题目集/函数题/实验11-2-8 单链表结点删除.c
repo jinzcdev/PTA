@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/609
+// https://pintia.cn/problem-sets/13/exam/problems/609
 struct ListNode *readlist() {
     struct ListNode *L = (struct ListNode *)malloc(sizeof(struct ListNode)),
                     *r = L;

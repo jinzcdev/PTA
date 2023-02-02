@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805342821531648
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805342821531648
 #include <bits/stdc++.h>
 using namespace std;
 int m, n, cnt = 0, heap[1010];

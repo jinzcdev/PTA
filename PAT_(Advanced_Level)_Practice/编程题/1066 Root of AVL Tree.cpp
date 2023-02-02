@@ -1,5 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888
-//http://codeup.cn/problem.php?cid=100000614&pid=0
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805404939173888
 #include <cstdio>
 #include <algorithm>
 using namespace std;

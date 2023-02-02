@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/problems/994805058485469184
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805058485469184
 // 5
 // bob 11 101 102 103 104 105 106 107 108 108 107 107
 // peter 8 1 2 3 4 3 2 5 1

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/513
+// https://pintia.cn/problem-sets/13/exam/problems/513
 #include <stdio.h>
 int main() {
     int n, a, ans = 0;

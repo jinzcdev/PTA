@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652357
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652357
 n, m = map(int, input().split())
 cnt = 0
 flag = False

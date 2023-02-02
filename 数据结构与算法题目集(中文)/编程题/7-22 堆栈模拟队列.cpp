@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/837
+// https://pintia.cn/problem-sets/15/exam/problems/837
 #include <bits/stdc++.h>
 using namespace std;
 void move(stack<int> &s1, stack<int> &s2) {

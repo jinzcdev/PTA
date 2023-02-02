@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805271455449088
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805271455449088
 #include <cstdio>
 int main(){
     int n, num[10], ans = 0;

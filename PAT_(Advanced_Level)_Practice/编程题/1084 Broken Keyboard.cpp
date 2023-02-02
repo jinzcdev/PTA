@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805382902300672
 #include <iostream>
 using namespace std;
 bool hashMap[260], vis[260];

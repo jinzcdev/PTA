@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/815
+// https://pintia.cn/problem-sets/14/exam/problems/815
 #include <bits/stdc++.h>
 using namespace std;
 int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }

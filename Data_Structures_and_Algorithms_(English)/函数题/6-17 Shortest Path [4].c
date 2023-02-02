@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/1086
+// https://pintia.cn/problem-sets/16/exam/problems/1086
 void ShortestDist(MGraph Graph, int dist[], int path[], Vertex S) {
     for (int i = 0; i < Graph->Nv; i++) dist[i] = INFINITY;
     dist[S] = 0;

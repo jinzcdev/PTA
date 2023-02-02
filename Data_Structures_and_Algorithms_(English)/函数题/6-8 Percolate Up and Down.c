@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/703
+// https://pintia.cn/problem-sets/16/exam/problems/703
 void PercolateUp(int p, PriorityQueue H) {
     int i = p, j = i / 2;
     while (j >= 1) {

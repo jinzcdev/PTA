@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805277163896832
 #include <iostream>
 #include <map>
 using namespace std;

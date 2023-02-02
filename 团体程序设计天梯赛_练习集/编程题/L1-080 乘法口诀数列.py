@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/problems/1386335159927652359
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652359
 a, b, n = map(int, input().split())
 lst = [a, b]
 for i in range(n):

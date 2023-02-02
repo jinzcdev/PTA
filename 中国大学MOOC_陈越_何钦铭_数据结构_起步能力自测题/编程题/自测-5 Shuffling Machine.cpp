@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/17/problems/264
+// https://pintia.cn/problem-sets/17/exam/problems/264
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 55;

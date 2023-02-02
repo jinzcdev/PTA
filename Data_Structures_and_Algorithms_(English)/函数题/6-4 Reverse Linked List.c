@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/problems/699
+// https://pintia.cn/problem-sets/16/exam/problems/699
 List Reverse( List L ){
   if(L -> Next == NULL) return L;
   Position t,p = L -> Next -> Next,k = L -> Next;

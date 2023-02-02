@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/786
+// https://pintia.cn/problem-sets/14/exam/problems/786
 #include <cstdio>
 int main() {
     double d1, d2;

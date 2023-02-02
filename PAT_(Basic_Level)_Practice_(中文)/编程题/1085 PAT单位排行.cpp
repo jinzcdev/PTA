@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/problems/994805260353126400
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805260353126400
 #include <cstdio>
 #include <cstring>
 #include <string>

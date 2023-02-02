@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/736
+// https://pintia.cn/problem-sets/14/exam/problems/736
 ElementType Average( ElementType S[], int N ) {
     ElementType sum = 0;
     int i = 0;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/789
+// https://pintia.cn/problem-sets/14/exam/problems/789
 #include <cstdio>
 int main() {
     int a, b, c;

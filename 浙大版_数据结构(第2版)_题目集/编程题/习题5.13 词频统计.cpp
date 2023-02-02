@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6259
+// https://pintia.cn/problem-sets/434/exam/problems/6259
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<string, int> psi;

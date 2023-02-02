@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805402305150976
 #include <bits/stdc++.h>
 using namespace std;
 const int maxn = 10010, maxv = 110;

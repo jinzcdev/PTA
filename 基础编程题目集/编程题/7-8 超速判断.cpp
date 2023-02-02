@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/788
+// https://pintia.cn/problem-sets/14/exam/problems/788
 #include <cstdio>
 int main() {
     int v;

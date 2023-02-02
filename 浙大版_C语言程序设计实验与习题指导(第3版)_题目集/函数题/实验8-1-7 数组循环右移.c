@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/problems/551
+// https://pintia.cn/problem-sets/13/exam/problems/551
 void reverse (int a[], int left, int right) {
     for (int i = left; i < (left + right + 1) / 2; i++) {
         int temp = a[i];

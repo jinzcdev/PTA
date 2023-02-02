@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805344490864640
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805344490864640
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

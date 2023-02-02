@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/problems/813
+// https://pintia.cn/problem-sets/14/exam/problems/813
 #include <cstdio>
 int gcd(int a, int b) {
     return b == 0 ? a : gcd(b, a % b);

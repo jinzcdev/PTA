@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/problems/895
+// https://pintia.cn/problem-sets/15/exam/problems/895
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 10001;

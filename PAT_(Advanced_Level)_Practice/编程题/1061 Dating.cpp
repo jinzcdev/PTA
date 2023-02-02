@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805411985604608
 #include <cstdio>
 #include <cstring>
 char week[][4] = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};

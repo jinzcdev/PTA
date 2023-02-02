@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/problems/6098
+// https://pintia.cn/problem-sets/434/exam/problems/6098
 bool Push(Stack S, ElementType X) {
     if (S->Top == S->MaxSize) {
         printf("Stack Full\n");
