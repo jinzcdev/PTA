@@ -1,5 +1,5 @@
 
-## 编程题 (167/167)
+## 编程题 (171/171)
 
 - [1001. A+B Format](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1001%20A%2BB%20Format.cpp)
 - [1002. A+B for Polynomials](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1002%20A%2BB%20for%20Polynomials.cpp)
@@ -168,3 +168,7 @@
 - [1165. Block Reversing](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1165%20Block%20Reversing.cpp)
 - [1166. Summit](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1166%20Summit.cpp)
 - [1167. Cartesian Tree](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1167%20Cartesian%20Tree.cpp)
+- [1168. Prime Day](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1168%20Prime%20Day.cpp)
+- [1169. The Judger](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1169%20The%20Judger.cpp)
+- [1170. Safari Park](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1170%20Safari%20Park.cpp)
+- [1171. Replacement Selection](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Advanced_Level%29_Practice/%E7%BC%96%E7%A8%8B%E9%A2%98/1171%20Replacement%20Selection.cpp)

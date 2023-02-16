@@ -1,5 +1,5 @@
 
-## 编程题 (110/110)
+## 编程题 (115/115)
 
 - [1001. 害死人不偿命的(3n+1)猜想](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1001%20%E5%AE%B3%E6%AD%BB%E4%BA%BA%E4%B8%8D%E5%81%BF%E5%91%BD%E7%9A%84%283n%2B1%29%E7%8C%9C%E6%83%B3.cpp)
 - [1002. 写出这个数](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1002%20%E5%86%99%E5%87%BA%E8%BF%99%E4%B8%AA%E6%95%B0.cpp)
@@ -111,3 +111,8 @@
 - [1108. String复读机](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1108%20String%E5%A4%8D%E8%AF%BB%E6%9C%BA.cpp)
 - [1109. 擅长C](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1109%20%E6%93%85%E9%95%BFC.cpp)
 - [1110. 区块反转](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1110%20%E5%8C%BA%E5%9D%97%E5%8F%8D%E8%BD%AC.cpp)
+- [1111. 对称日](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1111%20%E5%AF%B9%E7%A7%B0%E6%97%A5.cpp)
+- [1112. 超标区间](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1112%20%E8%B6%85%E6%A0%87%E5%8C%BA%E9%97%B4.cpp)
+- [1113. 钱串子的加法](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1113%20%E9%92%B1%E4%B8%B2%E5%AD%90%E7%9A%84%E5%8A%A0%E6%B3%95.cpp)
+- [1114. 全素日](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1114%20%E5%85%A8%E7%B4%A0%E6%97%A5.cpp)
+- [1115. 裁判机](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1115%20%E8%A3%81%E5%88%A4%E6%9C%BA.cpp)
