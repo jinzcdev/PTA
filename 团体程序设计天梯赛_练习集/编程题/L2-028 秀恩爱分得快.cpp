@@ -1,54 +1,88 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805054698012672
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805054698012672
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <algorithm>
 using namespace std;
-const int N = 1010;
-int n, m, k, ismale[N] = {0};
-double w[N][N] = {0};
-set<int> s;
-void solve(vector<int> &ans, int a, double &MAX) {
-    for (const auto &it : s) {
-        if (ismale[it] + ismale[a] != 1) continue;
-        if (w[it][a] > MAX) {
-            MAX = w[it][a];
-            ans.clear();
-            ans.push_back(it);
-        } else if (w[it][a] == MAX) {
-            ans.push_back(it);
+bool cmp (int a, int b) {
+    if(abs(a) == 1000) return true;
+    if(abs(b) == 1000) return false;
+    return abs(a) < abs(b);
+}
+int main(){
+    int n, m, num, k, sex[1010] = {0}, love[3];
+    double sum[1010] = {0}, maxn[3] = {0} ;
+    string s;
+    cin >> n >> m;
+    vector<vector<int>> v(m), ans(3);
+    for(int i = 0; i < m; i++) {
+        cin >> k;
+        for(int j = 0; j < k; j++){
+            cin >> s;
+            if(s == "0")  s = "1000";
+            if(s == "-0") s = "-1000";
+            num = stoi(s);
+            sex[abs(num)] = num;
+            v[i].push_back(num);
         }
     }
-}
-int main() {
-    string a, b;
-    scanf("%d%d", &n, &m);
-    while (m--) {
-        scanf("%d", &k);
-        vector<int> a;
-        string str;
-        for (int i = 0; i < k; i++) {
-            cin >> str;
-            int tmp = abs(stoi(str));
-            if (str[0] != '-') ismale[tmp] = 1;
-            a.push_back(tmp);
-            s.insert(tmp);
-        }
-        for (int u = 0; u < k - 1; u++) {
-            for (int v = u + 1; v < k; v++) {
-                if (ismale[a[u]] + ismale[a[v]] != 1) continue;
-                w[a[u]][a[v]] = (w[a[v]][a[u]] += 1.0 / k);
+    for(int i = 1; i <= 2; i++) {
+        cin >> s;
+        if(s == "0")  s = "1000";
+        if(s == "-0") s = "-1000";
+        love[i] = stoi(s);
+    }
+    for(int k = 1; k <= 2; k++) {
+        for(int i = 0; i < m; i++) {
+            int flag = 0;
+            for(int j = 0; j < v[i].size(); j++){
+                if(v[i][j] == love[k]) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 1) {
+                for(int j = 0; j < v[i].size(); j++){
+                    if(love[k] * v[i][j] < 0)  {
+                        sum[(int)abs(v[i][j])] += 1.0 / v[i].size();
+                    }
+                }
             }
         }
     }
-    cin >> a >> b;
-    int ia = abs(stoi(a)), ib = abs(stoi(b));
-    double MAXA = -1, MAXB = -1;
-    vector<int> ansA, ansB;
-    solve(ansA, ia, MAXA);
-    solve(ansB, ib, MAXB);
-    if (w[ia][ib] == MAXA && MAXA == MAXB) {
-        cout << a << " " << b;
+    maxn[1] = maxn[2] = -1;
+    for(int k = 1; k <= 2; k++) {
+        for(int i = 1; i <= 1000; i++) {
+            if(love[k] * sex[i] < 0) {
+                if(sum[i] > maxn[k]) {
+                    maxn[k] = sum[i];
+                    ans[k].clear();
+                    ans[k].push_back(sex[i]);
+                }else if(sum[i] == maxn[k]) {
+                    ans[k].push_back(sex[i]);
+                }
+            }
+        }
+    }
+    if(maxn[1] == sum[(int)abs(love[2])] && maxn[2] == sum[(int)abs(love[1])]) {
+        string s1 = to_string(love[1]), s2 = to_string(love[2]);
+        if(love[1] == 1000)  s1 = "0";
+        if(love[1] == -1000)  s1 = "-0";
+        if(love[2] == 1000)  s2 = "0";
+        if(love[2] == -1000)  s2 = "-0";
+        cout << s1 << " " << s2 << endl;
         return 0;
     }
-    for (const auto &it : ansA) printf("%s %s%d\n", a.c_str(), ismale[it] ? "" : "-", it);
-    for (const auto &it : ansB) printf("%s %s%d\n", b.c_str(), ismale[it] ? "" : "-", it);
+    for(int k = 1; k <= 2; k++) {
+        sort(ans[k].begin(), ans[k].end(), cmp);
+        for(int i = 0; i < ans[k].size(); i++) {
+            string s1 = to_string(love[k]), s2 = to_string(ans[k][i]);
+            if(love[k] == 1000)  s1 = "0";
+            if(love[k] == -1000)  s1 = "-0";
+            if(ans[k][i] == 1000)  s2 = "0";
+            if(ans[k][i] == -1000)  s2 = "-0";
+            cout << s1 << " " << s2 << endl;
+        }
+    }
     return 0;
 }

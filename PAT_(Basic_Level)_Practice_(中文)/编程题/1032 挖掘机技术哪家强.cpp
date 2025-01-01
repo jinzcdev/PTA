@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805289432236032
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805289432236032
 #include<cstdio>
 const int maxn = 100010;
 int school[maxn]={0};

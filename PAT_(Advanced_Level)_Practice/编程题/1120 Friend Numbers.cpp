@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805352925609984
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805352925609984
 #include <cstdio>
 #include <vector>
 #include <algorithm>

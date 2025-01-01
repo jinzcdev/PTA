@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6475
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=6475
 void BFS(LGraph Graph, Vertex S, void (*Visit)(Vertex)) {
     Vertex Queue[MaxVertexNum];
     int front = 0, back = 0;

@@ -1,11 +1,16 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805107638517760
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805107638517760
+#include <algorithm>
+#include <iostream>
+#include <set>
+#include <vector>
 using namespace std;
 int main() {
     string a;
     cin >> a;
     set<int> s;
-    for (int i = 0; i < a.length(); i++) s.insert(a[i] - '0');
+    for (int i = 0; i < a.length(); i++) {
+        s.insert(a[i] - '0');
+    }
     vector<int> arr, index(a.length());
     for (auto it : s) arr.push_back(it);
     reverse(arr.begin(), arr.end());

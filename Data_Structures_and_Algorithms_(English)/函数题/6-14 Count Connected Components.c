@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/962
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=962
 bool vis[MaxVertexNum] = {false};
 void dfs(LGraph Graph, int u) {
     vis[u] = true;

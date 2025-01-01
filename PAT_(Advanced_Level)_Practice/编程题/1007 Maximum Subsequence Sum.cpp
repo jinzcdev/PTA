@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805514284679168
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805514284679168
 #include <cstdio>
 const int maxn = 10010;
 int a[maxn], dp[maxn];

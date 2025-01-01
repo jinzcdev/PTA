@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805351302414336
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805351302414336
 #include <cstdio>
 #include <algorithm>
 #include <queue>

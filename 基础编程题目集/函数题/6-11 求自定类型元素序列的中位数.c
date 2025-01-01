@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/743
+// https://pintia.cn/problem-sets/14/exam/problems/type/6?problemSetProblemId=743
 ElementType Median( ElementType A[], int N ){
     if (N == 1) return A[0];
     ShellSort(A, N);

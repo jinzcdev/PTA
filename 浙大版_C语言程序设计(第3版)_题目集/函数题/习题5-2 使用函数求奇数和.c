@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/302
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=302
 int even(int n) { return n % 2 == 0 ? 1 : 0; }
 int OddSum(int List[], int N) {
     if (N == 1) {

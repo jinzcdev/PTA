@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/812
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=812
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/446
+// https://pintia.cn/problem-sets/13/exam/problems/type/7?problemSetProblemId=446
 #include <stdio.h>
 void swap(int* a, int* b) {
     int tmp = *a;

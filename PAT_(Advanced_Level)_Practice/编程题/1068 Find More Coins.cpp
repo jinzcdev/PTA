@@ -1,7 +1,8 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805402305150976
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805402305150976
 #include <bits/stdc++.h>
 using namespace std;
-const int maxn = 10010, maxv = 110;
+const int maxn = 10010;
+const int maxv = 110;
 bool cmp(int a, int b) { return a > b; }
 int main() {
     int n, m;
@@ -19,7 +20,8 @@ int main() {
             }
         }
     }
-    if (dp[m] != m) printf("No Solution\n");
+    if (dp[m] != m)
+        printf("No Solution\n");
     else {
         vector<int> ans;
         int v = m, pos = n;

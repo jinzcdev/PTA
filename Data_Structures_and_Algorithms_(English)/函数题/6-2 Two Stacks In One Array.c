@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/697
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=697
 Stack CreateStack( int MaxElements )
 {
     Stack stack =(Stack)malloc(sizeof(struct StackRecord));

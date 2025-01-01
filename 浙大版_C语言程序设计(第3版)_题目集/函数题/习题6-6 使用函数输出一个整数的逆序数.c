@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/313
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=313
 int reverse( int number ) {
     int isneg = 0;
     if (number < 0) {

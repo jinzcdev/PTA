@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652362
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1386335159927652362
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<int, vector<int> > piv;

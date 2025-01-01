@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/706
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=706
 void ShortestDist(LGraph Graph, int dist[], Vertex S) {
     int INF = 0x7FFFFFFF;
     for (int i = 0; i < Graph->Nv; i++) dist[i] = INF;

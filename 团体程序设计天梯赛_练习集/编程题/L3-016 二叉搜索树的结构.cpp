@@ -1,63 +1,87 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805047903240192
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805047903240192
 #include <bits/stdc++.h>
 using namespace std;
-struct node {
-    int data;
-    node *left, *right;
-    node(int x) : data(x) { left = right = NULL; }
+struct Node {
+    int value;
+    Node *left, *right;
+    Node(int value = 0, Node *left = nullptr, Node *right = nullptr)
+        : value(value), left(left), right(right) {}
 };
-unordered_map<int, int> parent, lchild, rchild, level;
-void insert(node *&root, int x, int father, int depth) {
-    if (root == NULL) {
-        root = new node(x);
-        level[x] = depth;
-//         if (father != -1) {
-            parent[x] = father;
-            if (x < father) lchild[father] = x;
-            else rchild[father] = x;
-//         }
-        return;
-    }
-    if (x < root->data) insert(root->left, x, root->data, depth + 1);
-    else insert(root->right, x, root->data, depth + 1);
-}
-void parseNumber(string s, int &a, int &b) {
-    vector<int> v;
-    string it = "";
-    for (int i = 0; i < s.length(); i++) {
-        if (isdigit(s[i]) || s[i] == '-') it += s[i];
-        if ((!isdigit(s[i]) && s[i] != '-') || i == s.length() - 1) {
-            if (it != "") {
-                v.push_back(stoi(it));
-                it = "";
-            }
+struct Point {
+    int x = INT_MAX, y = INT_MAX;
+    Point() = default;
+    Point(int x, int y) : x(x), y(y) {}
+};
+void buildTree(Node*& root, int x) {
+    if (!root) {
+        root = new Node(x);
+    } else {
+        if (x > root->value) {
+            buildTree(root->right, x);
+        } else {
+            buildTree(root->left, x);
         }
     }
-    a = v[0];
-    b = v.size() > 1 ? v[1] : -1;
+}
+map<int, int> depthMap;
+map<int, Point> childMap;
+map<int, int> siblingMap;
+void dfs(Node* root, int depth) {
+    if (!root) return;
+    depthMap[root->value] = depth;
+    if (root->left) childMap[root->value].x = root->left->value;
+    if (root->right) childMap[root->value].y = root->right->value;
+    if (childMap[root->value].x != INT_MAX && childMap[root->value].y != INT_MAX) {
+        siblingMap[root->left->value] = root->right->value;
+        siblingMap[root->right->value] = root->left->value;
+    }
+    dfs(root->left, depth + 1);
+    dfs(root->right, depth + 1);
+}
+void freeTree(Node* root) {
+    if (!root) return;
+    freeTree(root->left);
+    freeTree(root->right);
+    delete root;
 }
 int main() {
-    int n, m, x, a, b;
+    int n, k;
     scanf("%d", &n);
-    node *root = NULL;
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &x);
-        insert(root, x, -1, 1);
+    vector<int> a(n);
+    for (int i = 0; i < n; ++i) {
+        scanf("%d", &a[i]);
     }
-    scanf("%d", &m);
-    getchar();
-    string s;
-    while (m--) {
-        bool flag = false;
+    Node* root = new Node(a[0]);
+    for (int i = 1; i < n; ++i) {
+        buildTree(root, a[i]);
+    }
+    dfs(root, 1);
+    cin >> k;
+    cin.ignore();
+    while (k--) {
+        string s;
         getline(cin, s);
-        parseNumber(s, a, b);
-        if (*s.rbegin() == 't') flag = root->data == a;
-        else if (*s.rbegin() == 's') flag = parent[a] == parent[b];
-        else if (*s.rbegin() == 'l') flag = level[a] == level[b];
-        else if (s.find('p') != string::npos) flag = a == parent[b];
-        else if (s.find('r') != string::npos) flag = a == rchild[b];
-        else flag = a == lchild[b];
-        printf("%s\n", flag ? "Yes" : "No");
+        int x, y;
+        if (s.find("root") != string::npos) {
+            sscanf(s.c_str(), "%d is the root", &x);
+            cout << (x == a[0] ? "Yes" : "No") << "\n";
+        } else if (s.find("siblings") != string::npos) {
+            sscanf(s.c_str(), "%d and %d are siblings", &x, &y);
+            cout << (siblingMap.find(x) != siblingMap.end() && siblingMap[x] == y ? "Yes" : "No") << "\n";
+        } else if (s.find("parent") != string::npos) {
+            sscanf(s.c_str(), "%d is the parent of %d", &x, &y);
+            cout << (childMap.find(x) != childMap.end() && (childMap[x].x == y || childMap[x].y == y) ? "Yes" : "No") << "\n";
+        } else if (s.find("left") != string::npos) {
+            sscanf(s.c_str(), "%d is the left child of %d", &x, &y);
+            cout << (childMap.find(y) != childMap.end() && childMap[y].x == x ? "Yes" : "No") << "\n";
+        } else if (s.find("right") != string::npos) {
+            sscanf(s.c_str(), "%d is the right child of %d", &x, &y);
+            cout << (childMap.find(y) != childMap.end() && childMap[y].y == x ? "Yes" : "No") << "\n";
+        } else if (s.find("same") != string::npos) {
+            sscanf(s.c_str(), "%d and %d are on the same level", &x, &y);
+            cout << (depthMap.find(x) != depthMap.end() && depthMap.find(y) != depthMap.end() && depthMap[x] == depthMap[y] ? "Yes" : "No") << "\n";
+        }
     }
+    freeTree(root);
     return 0;
 }

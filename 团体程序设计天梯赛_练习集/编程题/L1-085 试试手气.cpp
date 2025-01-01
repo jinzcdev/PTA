@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/1518581694528933888
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1518581694528933888
 #include <bits/stdc++.h>
 using namespace std;
 bool vis[10][10] = {false};

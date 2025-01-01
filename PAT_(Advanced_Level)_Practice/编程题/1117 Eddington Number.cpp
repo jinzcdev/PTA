@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805354762715136
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805354762715136
 #include <bits/stdc++.h>
 using namespace std;
 bool cmp(int a, int b) { return a > b; }

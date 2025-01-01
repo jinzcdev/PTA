@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/607
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=607
 struct ListNode *reverse( struct ListNode *head ) {
     if (head == NULL) return NULL;
     struct ListNode *h = (struct ListNode*)malloc(sizeof(struct ListNode)), *p = head->next;

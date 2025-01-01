@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/821
+// https://pintia.cn/problem-sets/15/exam/problems/type/7?problemSetProblemId=821
 #include <bits/stdc++.h>
 using namespace std;
 void move(int n, char a, char b, char c) {

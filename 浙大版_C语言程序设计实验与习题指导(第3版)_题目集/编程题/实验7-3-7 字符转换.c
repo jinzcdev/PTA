@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/528
+// https://pintia.cn/problem-sets/13/exam/problems/type/7?problemSetProblemId=528
 #include <stdio.h>
 #include <string.h>
 int main() {

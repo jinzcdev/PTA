@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/44932
+// https://pintia.cn/problem-sets/14/exam/problems/type/6?problemSetProblemId=44932
 int  Search_Bin(SSTable T, KeyType k){
 	int left = 0,right = T.length,mid = 0;
 	while(left < right){

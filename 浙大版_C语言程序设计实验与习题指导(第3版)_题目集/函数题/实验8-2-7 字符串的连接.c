@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/556
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=556
 char *str_cat( char *s, char *t ) {
     int slen = strlen(s), tlen = strlen(t);
     for (int i = 0; i < tlen; i++) {

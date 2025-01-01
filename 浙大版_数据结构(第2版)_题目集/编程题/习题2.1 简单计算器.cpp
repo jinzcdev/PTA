@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/5405
+// https://pintia.cn/problem-sets/434/exam/problems/type/7?problemSetProblemId=5405
 #include <bits/stdc++.h>
 using namespace std;
 bool isvalid(char ch) {

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/574
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=574
 int search(int n) {
     int cnt = 0;
     for (int x = 101; x <= n; x++) {

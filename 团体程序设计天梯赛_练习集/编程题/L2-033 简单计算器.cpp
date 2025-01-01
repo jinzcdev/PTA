@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/1336215880692482056
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1336215880692482056
 #include <bits/stdc++.h>
 using namespace std;
 int Pop(stack<int> &s) {

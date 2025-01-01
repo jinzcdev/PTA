@@ -1,17 +1,26 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805291311284224
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805291311284224
+#include <algorithm>
+#include <iostream>
+#include <vector>
 using namespace std;
 int main() {
-    int n, ans = 1;
+    int n;
     long long p;
     scanf("%d%ld", &n, &p);
     vector<int> v(n);
-    for (int i = 0; i < n; i++) scanf("%d", &v[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &v[i]);
+    }
     sort(v.begin(), v.end());
-    for (int i = 0; i < n && n - i > ans; i++) {
+    int ans = 0, temp = 0;
+    for (int i = 0; i < n; i++) {
         for (int j = i + ans; j < n; j++) {
-            if (v[i] * p < v[j]) break;
-            ans = max(ans, j - i + 1);
+            if (v[j] <= v[i] * p) {
+                temp = j - i + 1;
+                if (temp > ans) ans = temp;
+            } else {
+                break;
+            }
         }
     }
     printf("%d", ans);

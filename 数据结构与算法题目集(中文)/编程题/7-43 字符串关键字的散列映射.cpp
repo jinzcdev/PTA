@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/890
+// https://pintia.cn/problem-sets/15/exam/problems/type/7?problemSetProblemId=890
 #include <bits/stdc++.h>
 using namespace std;
 int getHash(string s) {

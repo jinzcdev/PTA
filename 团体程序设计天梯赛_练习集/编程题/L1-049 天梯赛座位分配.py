@@ -1,8 +1,10 @@
-# https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805081289900032
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805081289900032
 n = int(input())
 a = [[] for i in range(n)]
 num = list(map(int, input().split()))
 maxlen, cnt = max(num) * 10, -1 if n == 1 else 0
+cnt_max = num.count(max(num))
+idx_max = num.index(max(num))
 
 pre = 0
 flag = True

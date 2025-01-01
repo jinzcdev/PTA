@@ -1,68 +1,54 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805342821531648
-#include <bits/stdc++.h>
-using namespace std;
-int m, n, cnt = 0, heap[1010];
-void postOrder(int i) {
-    if (i > n) return;
-    postOrder(i * 2);
-    postOrder(i * 2 + 1);
-    printf("%d", heap[i]);
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805342821531648
+#include <cstdio>
+const int maxn = 1010;
+int Node[maxn], n, m, cnt;
+
+bool isMaxHeap(int root) {
+    if (root * 2 > n) { // 为叶子节点, 一定是大顶堆或小顶堆
+        return true;
+    } else if (root * 2 + 1 <= n) {     // 左右孩子都存在
+        return Node[root] >= Node[root * 2] && Node[root] >= Node[root * 2 + 1]
+        && isMaxHeap(root * 2) && isMaxHeap(root * 2 + 1);
+    } else {
+        return Node[root] >= Node[root * 2] && isMaxHeap(root * 2);
+    }
+}
+
+bool isMinHeap(int root) {
+    if (root * 2 > n) { // 为叶子节点, 一定是大顶堆或小顶堆
+        return true;
+    } else if (root * 2 + 1 <= n) {     // 左右孩子都存在
+        return Node[root] <= Node[root * 2] && Node[root] <= Node[root * 2 + 1]
+        && isMinHeap(root * 2) && isMinHeap(root * 2 + 1);
+    } else {
+        return Node[root] <= Node[root * 2] && isMinHeap(root * 2);
+    }
+}
+
+void postOrder(int root) {
+    if (root > n) return;
+    postOrder(root * 2);
+    postOrder(root * 2 + 1);
+    printf("%d", Node[root]);
     if (++cnt < n) printf(" ");
 }
+
 int main() {
     scanf("%d%d", &m, &n);
     while (m--) {
-        for (int j = 1; j <= n; j++) scanf("%d", &heap[j]);
-        bool isMaxHeap = true, isMinHeap = true;
-        for (int i = 2; i <= n; i++) {
-            if (heap[i] > heap[i / 2]) isMaxHeap = false;
-            if (heap[i] < heap[i / 2]) isMinHeap = false;
+        for (int i = 1; i <= n; i++) {
+            scanf("%d", Node + i);
         }
-        if (!isMaxHeap && !isMinHeap) printf("Not Heap\n");
-        else printf("%s\n", isMaxHeap ? "Max Heap" : "Min Heap");
+        if (isMaxHeap(1)) {
+            printf("Max Heap\n");
+        } else if (isMinHeap(1)) {
+            printf("Min Heap\n");
+        } else {
+            printf("Not Heap\n");
+        }
         cnt = 0;
         postOrder(1);
         printf("\n");
     }
     return 0;
 }
-
-/*
-#include <bits/stdc++.h>
-using namespace std;
-int n, m, cnt;
-vector<int> heap;
-bool isMaxHeap(int i) {
-    if (i > n || i * 2 > n) return true;
-    if (heap[i] < heap[i * 2] || (i * 2 + 1 <= n && heap[i] < heap[i * 2 + 1]))
-        return false;
-    return isMaxHeap(i * 2) && isMaxHeap(i * 2 + 1);
-}
-bool isMinHeap(int i) {
-    if (i > n || i * 2 > n) return true;
-    if (heap[i] > heap[i * 2] || (i * 2 + 1 <= n && heap[i] > heap[i * 2 + 1]))
-        return false;
-    return isMinHeap(i * 2) && isMinHeap(i * 2 + 1);
-}
-void postOrder(int i) {
-    if (i > n) return;
-    postOrder(i * 2);
-    postOrder(i * 2 + 1);
-    printf("%d", heap[i]);
-    if (++cnt < n) printf(" ");
-}
-int main() {
-    cin >> m >> n;
-    heap.resize(n + 1);
-    for (int i = 0; i < m; i++) {
-        for (int i = 1; i <= n; i++) scanf("%d", &heap[i]);
-        if (isMaxHeap(1)) printf("Max Heap\n");
-        else if (isMinHeap(1)) printf("Min Heap\n");
-        else printf("Not Heap\n");
-        cnt = 0;
-        postOrder(1);
-        printf("\n");
-    }
-    return 0;
-}
-*/

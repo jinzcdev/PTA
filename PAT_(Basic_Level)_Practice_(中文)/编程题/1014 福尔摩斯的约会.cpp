@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805308755394560
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805308755394560
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -23,9 +23,5 @@ int main() {
             break;
         }
     }
-//     printf("%s ", day[a - 'A']);
-//     if (isdigit(b)) printf("%02d", b - '0');
-//     else printf("%02d", b - 'A' + 10);
-//     printf(":%02d", mm);
     return 0;
 }

@@ -1,54 +1,46 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805395707510784
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    string s;
-    cin >> s;
-    if (s[0] == '-') printf("-");
-    s.erase(s.begin());
-    int pos = s.find('E'), e = stoi(s.substr(pos + 2));
-    if (s[pos + 1] == '+') {
-        cout << s[0];
-        if (e >= pos - 2) {
-            cout << s.substr(2, pos - 2);
-            for (int i = 0; i < e - pos + 2; i++) cout << "0";
-        } else {
-            cout << s.substr(2, e) << ".";
-            cout << s.substr(e + 2, pos - e - 2);
-        }
-    } else {
-        cout << "0.";
-        for (int i = 0; i < e - 1; i++) cout << "0";
-        cout << s[0] << s.substr(2, pos - 2);
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805395707510784
+#include <cstdio>
+#include <cstring>
+
+int main(){
+    char str[10010];
+    scanf("%s",str);
+    int len = strlen(str);
+
+    if(str[0] == '-') printf("-");
+    int exp = 0,pos = 0;
+    while(str[pos] != 'E'){
+        pos++;
     }
-    return 0;
-}
-/*
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    string s;
-    char op;
-    scanf("%c", &op);
-    if (op == '-') printf("-");
-    cin >> s;
-    int pose = s.find('E');
-    string number = s.substr(0, pose);
-    int len = stoi(s.substr(pose + 2));
-    if (s[pose + 1] == '-') {
+    // 取得指数值
+    for (int i = pos + 2; i < len; i++){
+        exp = exp * 10 + str[i] - '0';
+    }
+    if(exp == 0){
+        for (int i = 1; i < pos; i++){
+            printf("%c",str[i]);
+        }
+    }
+
+    if(str[pos + 1] == '-'){
         printf("0.");
-        for (int i = 0; i < len - 1; i++) printf("0");
-        printf("%c%s", number[0], number.substr(2).c_str());
-    } else {
-        if (number.length() - 2 > len) {
-            cout << number[0];
-            cout << number.substr(2, len) << "." << number.substr(2 + len);
-        } else {
-            number.erase(1, 1);
-            cout << number;
-            for (int i = 0; i < len - (number.length() - 1); i++) printf("0");
+        for (int i = 0; i < exp - 1; i++)
+            printf("0");
+        for (int i = 1; i < pos; i++){
+            if(i == 2) continue;
+            printf("%c",str[i]);
+        }
+    }else{
+        for (int i = 1; i < pos; i++){
+            if(str[i] == '.') continue;
+            printf("%c",str[i]);
+            if(i == exp + 2 && pos - 3 != exp){
+                printf(".");
+            }
+        }
+        for (int i = 0; i < exp - (pos - 3); i++){
+            printf("0");
         }
     }
     return 0;
 }
-*/

@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652356
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1386335159927652356
 mood = list(map(int,input().split()))
 while True:
     h = int(input())

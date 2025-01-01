@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805068539215872
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805068539215872
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 10000;
@@ -39,7 +39,9 @@ int main() {
             s.insert(child);
             uni(a, child);
         }
-        scanf("%d%d", &mestate[a], &area[a]);
+        int temp;
+        scanf("%d%d", &temp, &area[a]);
+        mestate[a] += temp;
     }
     unordered_map<int, node> mp;
     vector<node> ans;
@@ -55,7 +57,8 @@ int main() {
     }
     sort(ans.begin(), ans.end(), cmp);
     printf("%d\n", ans.size());
-    for (auto it : ans)
+    for (auto it : ans) {
         printf("%04d %d %.3f %.3f\n", it.id, it.cnt, it.avgM, it.avgA);
+    }
     return 0;
 }

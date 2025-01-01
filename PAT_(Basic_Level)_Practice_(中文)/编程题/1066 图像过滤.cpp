@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805266514558976
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805266514558976
 #include <iostream>
 using namespace std;
 const int maxn = 510;

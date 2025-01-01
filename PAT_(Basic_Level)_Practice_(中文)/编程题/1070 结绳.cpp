@@ -1,8 +1,5 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805264706813952
-#include <algorithm>
-#include <iostream>
-#include <vector>
-#include <cmath>
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805264706813952
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
     int n;

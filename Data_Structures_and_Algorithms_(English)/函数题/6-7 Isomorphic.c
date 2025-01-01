@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/702
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=702
 int Isomorphic(Tree T1, Tree T2) {
     if (T1 == NULL && T2 == NULL) return 1;
     if ((T1 == NULL && T2 != NULL) || (T2 == NULL && T1 != NULL)) return 0;

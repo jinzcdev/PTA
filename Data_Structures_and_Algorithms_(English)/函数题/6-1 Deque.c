@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/696
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=696
 Deque CreateDeque(){
     PtrToNode header = (PtrToNode)malloc(sizeof(struct Node));
     header -> Next = header -> Last = NULL;

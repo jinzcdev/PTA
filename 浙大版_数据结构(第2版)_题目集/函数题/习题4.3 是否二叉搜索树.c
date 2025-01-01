@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6178
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=6178
 bool isValidBST(BinTree T, int low, int high) {
     if (T == NULL) return true;
     if (T->Data <= low || T->Data >= high) return false;

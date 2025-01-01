@@ -1,8 +1,8 @@
-// https://pintia.cn/problem-sets/434/exam/problems/5860
+// https://pintia.cn/problem-sets/434/exam/problems/type/7?problemSetProblemId=5860
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int n, begin, MAX = 1;
+    int n, begin = 0, MAX = 1;
     cin >> n;
     vector<int> a(n), dp(n);
     for (int i = 0; i < n; i++) scanf("%d", &a[i]);

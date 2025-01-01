@@ -1,25 +1,28 @@
-// https://pintia.cn/problem-sets/14/exam/problems/814
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=814
 #include <bits/stdc++.h>
 using namespace std;
-struct node {
-    string name, date, sex, tel, phone;
-};
+struct Node {
+    string name, bir, M, tel, pho;
+    Node(string a = "", string b = "", string c = "", string d = "",
+         string e = "")
+        : name(a), bir(b), M(c), tel(d), pho(e) {}
+} N[15];
 int main() {
-    int n, k, a;
-    vector<node> v;
+    int n, k, ka;
+    string a, b, c, d, e;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
-        node stu;
-        cin >> stu.name >> stu.date >> stu.sex >> stu.tel >> stu.phone;
-        v.push_back(stu);
+        cin >> a >> b >> c >> d >> e;
+        N[i] = Node(a, b, c, d, e);
     }
     scanf("%d", &k);
-    while (k--) {
-        scanf("%d", &a);
-        if (a < 0 || a >= n) cout << "Not Found" << endl;
-        else {
-            cout << v[a].name << " " << v[a].tel << " " << v[a].phone << " "
-                 << v[a].sex << " " << v[a].date << endl;
+    for (int i = 0; i < k; i++) {
+        scanf("%d", &ka);
+        if (ka < n && ka >= 0) {
+            cout << N[ka].name << " " << N[ka].tel << " " << N[ka].pho << " "
+                 << N[ka].M << " " << N[ka].bir << endl;
+        } else {
+            cout << "Not Found" << endl;
         }
     }
     return 0;

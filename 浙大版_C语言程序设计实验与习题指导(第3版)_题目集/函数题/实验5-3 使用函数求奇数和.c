@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/461
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=461
 int even( int n ) {
     return n % 2 ? 0 : 1;
 }

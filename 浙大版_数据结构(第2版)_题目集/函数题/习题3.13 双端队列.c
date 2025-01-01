@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6096
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=6096
 bool Push(ElementType X, Deque D) {
     if ((D->Rear + 1) % D->MaxSize == D->Front) {
         return false;
@@ -27,6 +27,7 @@ ElementType Eject(Deque D) {
     if (D->Front == D->Rear) {
         return ERROR;
     }
+    ElementType tmp = D->Data[(D->Rear - 1 + D->MaxSize) % D->MaxSize];
     D->Rear = (D->Rear - 1 + D->MaxSize) % D->MaxSize;
-    return D->Data[D->Rear];
+    return tmp;
 }

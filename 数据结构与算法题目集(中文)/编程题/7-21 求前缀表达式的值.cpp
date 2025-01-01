@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/836
+// https://pintia.cn/problem-sets/15/exam/problems/type/7?problemSetProblemId=836
 #include <bits/stdc++.h>
 using namespace std;
 double pop(stack<double> &s) {

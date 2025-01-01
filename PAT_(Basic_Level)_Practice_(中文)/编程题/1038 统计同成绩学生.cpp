@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805284092887040
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805284092887040
 #include<cstdio>
 int main(){
   int a[10010],n,pos;

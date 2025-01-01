@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/349
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=349
 int set_grade( struct student *p, int n ) {
     int cnt = 0;
     for (int i = 0; i < n; i++) {

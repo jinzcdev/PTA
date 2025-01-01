@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/927
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=927
 BinTree Insert(BinTree BST, ElementType X) {
     if (BST == NULL) {
         BST = (BinTree)malloc(sizeof(struct TNode));

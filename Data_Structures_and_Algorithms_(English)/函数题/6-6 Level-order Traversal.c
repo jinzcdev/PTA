@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/701
+// https://pintia.cn/problem-sets/16/exam/problems/type/6?problemSetProblemId=701
 void Level_order(Tree T, void (*visit)(Tree ThisNode)) {
     if (T == NULL) return;
     Tree q[1000];

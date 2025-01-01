@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805317546655744
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805317546655744
 #include <cstdio>
 bool isPrime(int n) {
     if (n <= 1) return false;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/798
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=798
 #include <bits/stdc++.h>
 using namespace std;
 vector<double> v(4);
@@ -20,8 +20,11 @@ int main() {
         if (f(mid) == 0) {
             flag = true;
             break;
-        } else if (f(mid) * f(a) > 0) a = mid;
-        else if (f(mid) * f(b) > 0) b = mid;
+        } else if (f(mid) * f(a) > 0) {
+            a = mid;
+        } else if (f(mid) * f(b) > 0) {
+            b = mid;
+        }
     }
     printf("%.2f", (a + b) / 2);
     return 0;

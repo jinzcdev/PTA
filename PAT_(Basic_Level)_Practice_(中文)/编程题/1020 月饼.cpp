@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805301562163200
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805301562163200
 #include <bits/stdc++.h>
 using namespace std;
 struct node {
@@ -6,7 +6,8 @@ struct node {
 };
 bool cmp(node a, node b) { return a.price > b.price; }
 int main() {
-    int n, d;
+    int n;
+    double d;
     cin >> n >> d;
     vector<node> v(n);
     for (int i = 0; i < n; i++) cin >> v[i].stock;

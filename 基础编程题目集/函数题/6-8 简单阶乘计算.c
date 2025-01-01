@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/740
+// https://pintia.cn/problem-sets/14/exam/problems/type/6?problemSetProblemId=740
 int Factorial( const int N ) {
     if (N < 0) return 0;
     if (N == 0) return 1;

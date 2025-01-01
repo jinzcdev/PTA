@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/1621700048826490880
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1621700048826490880
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, a, b;

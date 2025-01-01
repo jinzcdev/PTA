@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/306
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=306
 int narcissistic( int number ) {
     int len = 0, temp = number, sum = 0, d[10];
     for ( ; temp != 0; temp /= 10) d[len++] = temp % 10;

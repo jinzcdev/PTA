@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/720
+// https://pintia.cn/problem-sets/15/exam/problems/type/7?problemSetProblemId=720
 #include <bits/stdc++.h>
 using namespace std;
 void QuickSort(vector<int> &a, int left, int right) {

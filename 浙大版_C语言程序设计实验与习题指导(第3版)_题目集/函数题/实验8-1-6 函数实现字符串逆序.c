@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/541
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=541
 void f(char *p) {
     int len = 0, j = 0;
     while (p[j++] != '\0') len++;

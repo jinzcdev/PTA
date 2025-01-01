@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/728
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=728
 Position Find(List L, ElementType X) {
     if (!L) return ERROR;
     else if (L->Data == X) return L;

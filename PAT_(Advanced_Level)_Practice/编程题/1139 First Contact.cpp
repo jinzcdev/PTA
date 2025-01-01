@@ -1,40 +1,46 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805344776077312
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805344776077312
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <unordered_map>
 using namespace std;
-bool cmp(pair<int, int> a, pair<int, int> b) {
-    return a.first != b.first ? a.first < b.first : a.second < b.second;
+unordered_map<int, bool> arr;
+struct node {
+    int a, b;
+};
+bool cmp(node x, node y) {
+    return x.a != y.a ? x.a < y.a : x.b < y.b;
 }
 int main() {
     int n, m, k;
-    unordered_map<int, bool> isfriend;
-    vector<int> f[10000];
-    string a, b;
     scanf("%d%d", &n, &m);
+    vector<int> v[10000];
     for (int i = 0; i < m; i++) {
+        string a, b;
         cin >> a >> b;
-        int ia = abs(stoi(a)), ib = abs(stoi(b));
         if (a.length() == b.length()) {
-            f[ia].push_back(ib);
-            f[ib].push_back(ia);
+            v[abs(stoi(a))].push_back(abs(stoi(b)));
+            v[abs(stoi(b))].push_back(abs(stoi(a)));
         }
-        isfriend[ia * 10000 + ib] = isfriend[ib * 10000 + ia] = true;
+        arr[abs(stoi(a)) * 10000 + abs(stoi(b))] = arr[abs(stoi(b)) * 10000 + abs(stoi(a))] = true;
     }
     scanf("%d", &k);
-    while (k--) {
-        cin >> a >> b;
-        int ia = abs(stoi(a)), ib = abs(stoi(b));
-        vector<pair<int, int> > ans;
-        for (auto ta : f[ia]) {
-            if (ta == ib) continue;
-            for (auto tb : f[ib]) {
-                if (tb != ia && isfriend[ta * 10000 + tb]) {
-                    ans.push_back({ta, tb});
-                }
+    for (int i = 0; i < k; i++) {
+        int c, d;
+        cin >> c >> d;
+        vector<node> ans;
+        for (int j = 0; j < v[abs(c)].size(); j++) {
+            for (int k = 0; k < v[abs(d)].size(); k++) {
+                if (v[abs(c)][j] == abs(d) || abs(c) == v[abs(d)][k]) continue;
+                if (arr[v[abs(c)][j] * 10000 + v[abs(d)][k]] == true)
+                    ans.push_back(node{v[abs(c)][j], v[abs(d)][k]});
             }
         }
-        printf("%d\n", ans.size());
         sort(ans.begin(), ans.end(), cmp);
-        for (auto it : ans) printf("%04d %04d\n", it.first, it.second);
+        printf("%d\n", int(ans.size()));
+        for(int j = 0; j < ans.size(); j++)
+            printf("%04d %04d\n", ans[j].a, ans[j].b);
     }
     return 0;
 }

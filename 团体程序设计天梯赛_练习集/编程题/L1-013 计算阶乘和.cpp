@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805127389495296
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805127389495296
 #include <cstdio>
 int main() {
     int n, sum = 0, tmp = 1;

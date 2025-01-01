@@ -1,4 +1,64 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/1038430130011897856
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038430130011897856
+#include <bits/stdc++.h>
+using namespace std;
+struct node {
+    int val;
+    node *left, *right;
+    node(int _val) : val(_val) { left = right = nullptr; }
+};
+vector<int> pre, in, ans;
+node* build(int prel, int prer, int inl, int inr) {
+    if (prel > prer) return nullptr;
+    node* root = new node(pre[prel]);
+    int k = inl;
+    while (k <= inr && in[k] != pre[prel]) k++;
+    int numleft = k - inl;
+    root->left = build(prel + 1, prel + numleft, inl, k - 1);
+    root->right = build(prel + numleft + 1, prer, k + 1, inr);
+    return root;
+}
+node* lca(node* root, int u, int v) {
+    if (root == nullptr || root->val == u || root->val == v) {
+        return root;
+    }
+    node* left = lca(root->left, u, v);
+    node* right = lca(root->right, u, v);
+    if (left != nullptr && right != nullptr) {
+        return root;
+    }
+    return left == nullptr ? right : left;
+}
+int main() {
+    int n, m;
+    cin >> n >> m;
+    pre.resize(m);
+    in.resize(m);
+    unordered_set<int> st;
+    for (int i = 0; i < m; i++) {
+        cin >> in[i];
+        st.insert(in[i]);
+    }
+    for (int i = 0; i < m; i++) cin >> pre[i];
+    node* root = build(0, m - 1, 0, m - 1);
+    int a, b;
+    while (n--) {
+        cin >> a >> b;
+        if (st.find(a) == st.end() && st.find(b) == st.end()) {
+            printf("ERROR: %d and %d are not found.\n", a, b);
+        } else if (st.find(a) == st.end() || st.find(b) == st.end()) {
+            printf("ERROR: %d is not found.\n", st.find(a) == st.end() ? a : b);
+        } else {
+            node* nd = lca(root, a, b);
+            if (nd->val == a || nd->val == b) {
+                printf("%d is an ancestor of %d.\n", nd->val, nd->val == a ? b : a);
+            } else {
+                printf("LCA of %d and %d is %d.\n", a, b, nd->val);
+            }
+        }
+    }
+    return 0;
+}
+/*
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 10010;
@@ -30,7 +90,7 @@ int main() {
     }
     return 0;
 }
-
+*/
 /*
 #include <bits/stdc++.h>
 using namespace std;

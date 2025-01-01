@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/287
+// https://pintia.cn/problem-sets/12/exam/problems/type/7?problemSetProblemId=287
 #include <stdio.h>
 int main() {
     int a, sum = 0;

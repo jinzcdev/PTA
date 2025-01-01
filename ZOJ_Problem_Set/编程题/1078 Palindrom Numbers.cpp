@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/91827364500/exam/problems/91827364577
+// https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?problemSetProblemId=91827364577
 #include <bits/stdc++.h>
 using namespace std;
 bool ispali(string s) {

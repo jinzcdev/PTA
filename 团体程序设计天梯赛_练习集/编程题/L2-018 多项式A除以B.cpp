@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805060372905984
+// https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805060372905984
 #include <bits/stdc++.h>
 using namespace std;
 void printPloy(map<int, double> &poly) {

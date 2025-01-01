@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6222
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=6222
 bool Delete(HashTable H, ElementType Key) {
     Index pos = Hash(Key, H->TableSize);
     List L = H->Heads + pos;

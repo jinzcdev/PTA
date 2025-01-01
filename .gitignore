@@ -34,3 +34,4 @@
 .DS_Store
 tmp/
 .vscode/
+*.log

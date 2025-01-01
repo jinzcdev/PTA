@@ -1,90 +1,65 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/1038430013544464384
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=1038430013544464384
+#include <cstdio>
+#include <algorithm>
+#include <set>
 using namespace std;
-const int N = 210, INF = 0x3f3f3f3f;
+const int maxn = 210;
+const int INF = 0x7777777F;
+int G[maxn][maxn], d[maxn];
+
 int main() {
-    int e[N][N], n, m, k, a, b, dist;
+    int n, m, k;
     scanf("%d%d", &n, &m);
-    fill(e[0], e[0] + N * N, INF);
+    fill(G[0], G[0] + maxn * maxn, INF);
+    int city1, city2;
     for (int i = 0; i < m; i++) {
-        scanf("%d%d%d", &a, &b, &dist);
-        e[a][b] = e[b][a] = dist;
+        scanf("%d%d", &city1, &city2);
+        scanf("%d", &G[city1][city2]);
+        G[city2][city1] = G[city1][city2];
     }
-    scanf("%d", &m);
-    int ans, mindist = INF;
-    for (int i = 1; i <= m; i++) {
-        printf("Path %d: ", i);
-        scanf("%d", &k);
-        vector<int> v(k);
-        for (int j = 0; j < k; j++) scanf("%d", &v[j]);
-        unordered_set<int> s;
-        int totalDist = 0, iscycle = 1;
-        for (int j = 0; j < k - 1; j++) {
-            if (e[v[j]][v[j + 1]] == INF) {
-                iscycle = 0;
-                break;
-            }
-            s.insert(v[j]);
-            totalDist += e[v[j]][v[j + 1]];
+    scanf("%d", &k);
+    int path[maxn], ansPath, ansDist = INF;
+    for (int i = 1; i <= k; i++) {
+        scanf("%d", &m);
+        for (int i = 0; i < m; i++) {
+            scanf("%d", path + i);
         }
-        if (!iscycle) printf("NA (Not a TS cycle)\n");
-        else {
-            printf("%d ", totalDist);
-            if (v[0] != v[k - 1] || s.size() < n) printf("(Not a TS cycle)\n");
-            else {
-                printf("(%s)\n", k - 1 == n ? "TS simple cycle" : "TS cycle");
-                if (totalDist < mindist) {
-                    mindist = totalDist;
-                    ans = i;
+        int start = path[0], ans = 0, numCycle = 0;
+        bool isNotCycle = false;
+        set<int> visCity;
+        G[start][start] = 0;
+        for (int j = 0; j < m; j++) {
+            if (j != 0 && path[j] == path[0]) {
+                numCycle++;
+            }
+            if (G[start][path[j]] != INF) {
+                ans += G[start][path[j]];
+                start = path[j];
+            } else {
+                isNotCycle = true;
+            }
+            visCity.insert(path[j]);
+        }
+        if (visCity.size() != n) {
+            printf("Path %d: %d (Not a TS cycle)\n", i, ans);
+        } else if (isNotCycle) {
+            printf("Path %d: NA (Not a TS cycle)\n", i);
+        } else {
+            if (numCycle == 0) {
+                printf("Path %d: %d (Not a TS cycle)\n", i, ans);
+            } else {
+                if (numCycle == 1) {
+                    printf("Path %d: %d (TS simple cycle)\n", i, ans);
+                } else {
+                    printf("Path %d: %d (TS cycle)\n", i, ans);
+                }
+                if (ans < ansDist) {
+                    ansPath = i;
+                    ansDist = ans;
                 }
             }
         }
     }
-    printf("Shortest Dist(%d) = %d", ans, mindist);
+    printf("Shortest Dist(%d) = %d\n", ansPath, ansDist);
     return 0;
 }
-
-/*
-#include <bits/stdc++.h>
-using namespace std;
-const int N = 210;
-int main() {
-    int n, m, k, a, b, temp, e[N][N] = {0}, ans = 0, MIN = 0x7fffffff;
-    scanf("%d%d", &n, &m);
-    while (m--) {
-        scanf("%d%d%d", &a, &b, &temp);
-        e[a][b] = e[b][a] = temp;
-    }
-    scanf("%d", &m);
-    for (int i = 1; i <= m; i++) {
-        printf("Path %d: ", i);
-        scanf("%d", &k);
-        vector<int> v(k);
-        int isvalid = 1, dist = 0;
-        unordered_set<int> s;
-        for (int i = 0; i < k; i++) {
-            scanf("%d", &v[i]);
-            s.insert(v[i]);
-        }
-        for (int i = 0; i < k - 1; i++) {
-            dist += e[v[i]][v[i + 1]];
-            if (e[v[i]][v[i + 1]] == 0) {
-                isvalid = false;
-                break;
-            }
-        }
-        if (!isvalid) printf("NA (Not a TS cycle)\n");
-        else if (v[0] != v[k - 1] || s.size() != n) printf("%d (Not a TS cycle)\n", dist);
-        else {
-            if (k != n + 1) printf("%d (TS cycle)\n", dist);
-            else printf("%d (TS simple cycle)\n", dist);
-            if (dist < MIN) {
-                ans = i;
-                MIN = dist;
-            }
-        }
-    }
-    printf("Shortest Dist(%d) = %d\n", ans, MIN);
-    return 0;
-}
-*/

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/310
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=310
 int factorsum( int number ) {
   int sum = 1;
   for (int i = 2; i < number; i++)

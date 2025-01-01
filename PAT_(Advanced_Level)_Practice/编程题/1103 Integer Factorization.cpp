@@ -1,32 +1,47 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805364711604224
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805364711604224
+#include <cstdio>
+#include <cmath>
+#include <vector>
 using namespace std;
+const int maxn = 100;
+
 int n, k, p, maxFacSum = -1;
-vector<int> temp, ans, fac;
-void dfs(int x, int sum, int facSum, int cntK) {
-    if (x < 1 || sum > n || cntK > k) return;
-    if (sum == n && cntK == k) {
-        if (facSum > maxFacSum) {
+vector<int> ans, temp, fac;
+
+void init(){
+    int i = 0, temp = 0;
+    while (temp <= n){
+        fac.push_back(temp);
+        temp = pow(++i, p);
+    }
+}
+
+void DFS(int index, int nowK, int sum, int facSum){
+    if (sum == n && nowK == k){
+        if (facSum > maxFacSum){
             ans = temp;
             maxFacSum = facSum;
         }
         return;
     }
-    temp.push_back(x);
-    dfs(x, sum + fac[x], facSum + x, cntK + 1);
-    temp.pop_back();
-    dfs(x - 1, sum, facSum, cntK);
+    if (sum > n || nowK > k) return;
+    if (index - 1 >= 0){
+        temp.push_back(index);
+        DFS(index, nowK + 1, sum + fac[index], facSum + index);
+        temp.pop_back();
+        DFS(index - 1, nowK, sum, facSum);
+    }
 }
-int main() {
+
+int main(){
     scanf("%d%d%d", &n, &k, &p);
-    for (int i = 0; i <= sqrt(n * 1.0); i++) fac.push_back(pow(i, p));
-    dfs(fac.size() - 1, 0, 0, 0);
-    if (ans.size() == 0) printf("Impossible\n");
+    init();
+    DFS(fac.size() - 1, 0, 0, 0);
+    if (maxFacSum == -1) printf("Impossible\n");
     else {
-        printf("%d = ", n);
-        for (int i = 0; i < ans.size(); i++) {
-            if (i != 0) printf(" + ");
-            printf("%d^%d", ans[i], p);
+        printf("%d = %d^%d", n, ans[0], p);
+        for (int i = 1; i < ans.size(); i++){
+            printf(" + %d^%d", ans[i], p);
         }
     }
     return 0;

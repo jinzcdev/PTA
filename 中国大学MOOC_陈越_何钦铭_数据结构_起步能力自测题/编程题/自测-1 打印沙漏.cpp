@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/17/exam/problems/260
+// https://pintia.cn/problem-sets/17/exam/problems/type/7?problemSetProblemId=260
 #include <cmath>
 #include <cstdio>
 int main() {

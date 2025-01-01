@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/exam/problems/994805074646122496
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805074646122496
 n = int(input())
 name, num = [], []
 ans = -1

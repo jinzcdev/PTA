@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/726
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=726
 int Length( List L ) {
     if (L == NULL) return 0;
     int len = 0;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/787
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=787
 #include <cstdio>
 int main() {
     int h, m;

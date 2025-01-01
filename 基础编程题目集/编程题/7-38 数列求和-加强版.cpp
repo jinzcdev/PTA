@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/3006
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=3006
 #include <cstdio>
 const int maxn = 100010;
 int main() {

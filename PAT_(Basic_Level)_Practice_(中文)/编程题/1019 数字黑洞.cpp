@@ -1,19 +1,36 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805302786899968
-#include <stdio.h>
-#include <stdlib.h>
-int cmpR(const void *a, const void *b) { return *(int *)a - *(int *)b; }
-int main() {
-    int num;
-    scanf("%d", &num);
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805302786899968
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+bool cmp(int a, int b){
+    return a > b;
+}
+
+int change(int x, bool asc){
+    int d[4] = {0}, i = 0, sum = 0;
+    while (x != 0){
+        d[i++] = x % 10;
+        x /= 10;
+    }
+    if (asc)
+        sort(d, d + 4);
+    else
+        sort(d, d + 4, cmp);
+    for (int i = 0; i < 4; i++){
+        sum = sum * 10 + d[i];
+    }
+    return sum;
+}
+
+int main(){
+    int n, s1, s2;
+    scanf("%d", &n);
     do {
-        int nums[4] = {0};
-        for (int i = 0; num != 0; i++, num /= 10) nums[i] = num % 10;
-        int a = 0, b = 0;  //用来保存两个临时数
-        qsort(nums, 4, sizeof(int), cmpR);
-        for (int i = 3; i >= 0; i--) a = a * 10 + nums[i];
-        for (int j = 0; j < 4; j++) b = b * 10 + nums[j];
-        num = a - b;
-        printf("%04d - %04d = %04d\n", a, b, num);
-    } while (num != 6174 && num != 0000);
+        s1 = change(n, false);
+        s2 = change(n, true);
+        n = s1 - s2;
+        printf("%04d - %04d = %04d\n", s1, s2, n);
+    } while (n != 6174 && n != 0000);
     return 0;
 }

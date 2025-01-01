@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/295
+// https://pintia.cn/problem-sets/12/exam/problems/type/7?problemSetProblemId=295
 #include <stdio.h>
 int main() {
     int n, row, num = -1;

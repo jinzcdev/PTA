@@ -1,13 +1,17 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805283241443328
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805283241443328
 #include <iostream>
 using namespace std;
-int main() {
-    string a, b;
-    int cnt = 0, shop[128] = {0}, eva[128] = {0};
-    cin >> a >> b;
-    for (auto s : a) shop[s]++;
-    for (auto s : b)
+const int maxn = 1010;
+int shop[maxn] = {0}, eva[maxn] = {0};
+int main(){
+    string s1, s2;
+    int cnt = 0;
+    cin >> s1 >> s2;
+    for(auto s : s1) shop[s]++;
+    for(auto s : s2) {
         if (--shop[s] < 0) cnt++;
-    printf("%s %d", cnt > 0 ? "No" : "Yes", cnt > 0 ? cnt : a.length() - b.length());
+    }
+    if (cnt > 0) cout << "No " << cnt;
+    else cout << "Yes " << s1.length() - s2.length();
     return 0;
 }

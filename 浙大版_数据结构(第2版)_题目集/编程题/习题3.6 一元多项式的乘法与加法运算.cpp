@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/5865
+// https://pintia.cn/problem-sets/434/exam/problems/type/7?problemSetProblemId=5865
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<int, int> pii;

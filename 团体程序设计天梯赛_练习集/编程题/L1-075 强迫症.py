@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/994805046380707840/exam/problems/1386335159927652354
+# https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1386335159927652354
 s = input()
 if len(s) == 6:
     print('%s-%s' % (s[:4], s[-2:]))

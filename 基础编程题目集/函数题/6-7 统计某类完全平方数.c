@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/739
+// https://pintia.cn/problem-sets/14/exam/problems/type/6?problemSetProblemId=739
 int IsTheNumber ( const int N ) {
     int hash[10] = {0}, temp = N, i;
     while (temp != 0) {

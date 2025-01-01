@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/966235055998885888
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=966235055998885888
 ElementType Find(List L, int m) {
     if (!L || m <= 0) return ERROR;
     int len = 0, cnt = 0, pos;

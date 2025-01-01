@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/988034414048743424/exam/problems/988039902048034816
+// https://pintia.cn/problem-sets/988034414048743424/exam/problems/type/6?problemSetProblemId=988039902048034816
 void InorderTraversal( BinTree BT ) {
     if (BT == NULL) return;
     InorderTraversal(BT->Left);

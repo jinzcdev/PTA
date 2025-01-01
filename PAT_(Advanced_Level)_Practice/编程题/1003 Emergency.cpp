@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805523835109376
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805523835109376
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 510, INF = 0x7FFFFFF;

@@ -1,27 +1,35 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805343043829760
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805343043829760
 #include <bits/stdc++.h>
 using namespace std;
+vector<vector<int> > g;
 int main() {
-    int n, m, k, a, b, cnt = 0;
+    int n, m, u, v, k;
     scanf("%d%d", &n, &m);
-    vector<int> e[n + 1], in(n + 1, 0);
-    for (int i = 0; i < m; i++) {
-        scanf("%d%d", &a, &b);
-        e[a].push_back(b);
-        in[b]++;
+    g.resize(n + 1);
+    vector<int> in(n + 1, 0), ans;
+    while (m--) {
+        scanf("%d%d", &u, &v);
+        g[u].push_back(v);
+        in[v]++;
     }
     scanf("%d", &k);
     for (int i = 0; i < k; i++) {
-        vector<int> v(n), tin = in;
-        for (int j = 0; j < n; j++) scanf("%d", &v[j]);
+        vector<int> temp(in);
+        bool flag = true;
         for (int j = 0; j < n; j++) {
-            if (tin[v[j]] > 0) {
-                if (cnt++ > 0) printf(" ");
-                printf("%d", i);
-                break;
+            scanf("%d", &u);
+            if (temp[u] != 0) {
+                if (flag) {
+                    ans.push_back(i);
+                    flag = false;
+                }
             }
-            for (auto it : e[v[j]]) tin[it]--;
+            for (auto it : g[u]) temp[it]--;
         }
+    }
+    for (int i = 0; i < ans.size(); i++) {
+        if (i != 0) printf(" ");
+        printf("%d", ans[i]);
     }
     return 0;
 }

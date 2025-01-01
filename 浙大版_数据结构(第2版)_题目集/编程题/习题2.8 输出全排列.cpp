@@ -1,4 +1,5 @@
-// https://pintia.cn/problem-sets/434/exam/problems/5811
+// https://pintia.cn/problem-sets/434/exam/problems/type/7?problemSetProblemId=5811
+// 习题2.8 输出全排列 (20 分)
 #include <iostream>
 using namespace std;
 const int N = 15;
@@ -29,19 +30,3 @@ int main() {
     }
     return 0;
 }
-
-/*
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) a[i] = i + 1;
-    do {
-        for (int i = 0; i < n; i++) printf("%d", a[i]);
-        printf("\n");
-    } while (next_permutation(a.begin(), a.end()));
-    return 0;
-}
-*/

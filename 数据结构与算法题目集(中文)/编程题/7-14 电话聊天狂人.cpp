@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/722
+// https://pintia.cn/problem-sets/15/exam/problems/type/7?problemSetProblemId=722
 #include <bits/stdc++.h>
 using namespace std;
 int n, maxCnt = 0, cntName = 1;
@@ -27,3 +27,7 @@ int main() {
     if (cntName > 1) printf(" %d", cntName);
     return 0;
 }
+
+/* @pintia note=start
+我的笔记
+@pintia note=end */

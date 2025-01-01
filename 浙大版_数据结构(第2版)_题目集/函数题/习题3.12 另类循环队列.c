@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6085
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=6085
 bool AddQ(Queue Q, ElementType X) {
     if (Q->Count == Q->MaxSize) {
         printf("Queue Full\n");

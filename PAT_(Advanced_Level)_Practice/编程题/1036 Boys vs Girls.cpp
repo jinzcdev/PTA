@@ -1,40 +1,15 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805453203030016
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    int n, grade, MIN = 999, MAX = -1;
-    string name, gender, id;
-    pair<string, string> m, f;
-    cin >> n;
-    while (n--) {
-        cin >> name >> gender >> id >> grade;
-        if (gender == "M" && grade < MIN) {
-                MIN = grade;
-                m = {name, id};
-        } else if (gender == "F" && grade > MAX) {
-            MAX = grade;
-            f = {name, id};
-        }
-    }
-    if (MAX != -1) cout << f.first << " " << f.second << endl;
-    else cout << "Absent" << endl;
-    if (MIN != 999) cout << m.first << " " << m.second << endl;
-    else cout << "Absent" << endl;
-    if (MAX == -1 || MIN == 999) cout << "NA";
-    else cout << MAX - MIN;
-    return 0;
-}
-
-/*
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805453203030016
 #include <cstdio>
 #include <vector>
 #include <cstring>
 using namespace std;
+// const int maxn 
 struct student {
     char name[15], id[15];
     char gender;
     int score;
 } stuM, stuF, stu;
+// vector<student>;
 int main(){
     int n, maxF = -1, minM = 110;
     scanf("%d", &n);
@@ -61,4 +36,3 @@ int main(){
     }
     return 0;
 }
-*/

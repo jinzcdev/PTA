@@ -1,4 +1,4 @@
-# https://pintia.cn/problem-sets/1111652100718116864/exam/problems/1163035698160459778
+# https://pintia.cn/problem-sets/1111652100718116864/exam/problems/type/6?problemSetProblemId=1163035698160459778
 def CountDigit(number, digit):
 	if number < 0:
 		number = -number

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/307
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=307
 double funcos( double e, double x ) {
     double ans = 1, item = 1, fac = 1;
     int flag = 1;

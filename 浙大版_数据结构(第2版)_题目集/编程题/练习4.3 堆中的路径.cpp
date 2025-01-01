@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/6104
+// https://pintia.cn/problem-sets/434/exam/problems/type/7?problemSetProblemId=6104
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1010;

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/729
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=729
 List MakeEmpty() {
     List L = (List)malloc(sizeof(struct LNode));
     L->Next = NULL;

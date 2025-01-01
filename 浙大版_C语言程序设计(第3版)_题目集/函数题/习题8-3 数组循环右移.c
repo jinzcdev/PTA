@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/336
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=336
 void swap(int *a, int *b) {
     int t = *a;
     *a = *b;

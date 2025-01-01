@@ -1,10 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/665
-// 5 7 5
-// 1 2 3 4 5 6 7
-// 3 2 1 7 5 6 4
-// 7 6 5 4 3 2 1
-// 5 6 4 3 7 2 1
-// 1 7 6 5 4 3 2
+// https://pintia.cn/problem-sets/16/exam/problems/type/7?problemSetProblemId=665
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

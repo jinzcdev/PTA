@@ -1,21 +1,24 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805266007048192
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805266007048192
+#include <iostream>
 using namespace std;
 int main() {
-    string pwd, s;
-    int n, cntErr = 0, cnt = 0;
-    cin >> pwd >> n;
+    string password, temp;
+    int n, cnt = 0;
+    cin >> password >> n;
     getchar();
-    while (getline(cin, s)) {
-        if (s == "#" || ++cnt > n) break;
-        if (s == pwd) {
-            printf("Welcome in\n");
+    while(1) {
+        getline(cin, temp);
+        if (temp == "#") break;
+        cnt++;
+        if (cnt <= n && temp == password) {
+            cout << "Welcome in";
             break;
-        }
-        printf("Wrong password: %s\n", s.c_str());
-        if (++cntErr == n) {
-            printf("Account locked\n");
-            break;
+        } else if (cnt <= n && temp != password) {
+            cout << "Wrong password: " << temp << endl;
+            if (cnt == n) {
+                cout << "Account locked";
+                break;
+            }
         }
     }
     return 0;

@@ -1,15 +1,15 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805430595731456
-#include <bits/stdc++.h>
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805430595731456
+#include <iostream>
 using namespace std;
 int main() {
-    int n, ans = 0;
+    int n, left = 0, right = 0, a = 1, now = 1, ans = 0;
     scanf("%d", &n);
-    int left = n / 10, right = 0, current = n % 10;
-    for (int i = 1; right != n; i *= 10) {
-        ans += left * i + (current == 0 ? 0 : current == 1 ? (right + 1) : i);
-        right += current * i;
-        current = left % 10;
-        left /= 10;
+    while(n / a) {
+        left = n / (a * 10), now = n / a % 10, right = n % a;
+        if(now == 0) ans += left * a;
+        else if(now == 1) ans += left * a + right + 1;
+        else ans += (left + 1) * a;
+        a = a * 10;
     }
     printf("%d", ans);
     return 0;

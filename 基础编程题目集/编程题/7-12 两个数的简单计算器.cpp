@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/792
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=792
 #include <cstdio>
 int main() {
     int a, b, ans, flag = 1;

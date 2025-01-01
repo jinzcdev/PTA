@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/434/exam/problems/5806
+// https://pintia.cn/problem-sets/434/exam/problems/type/6?problemSetProblemId=5806
 double dist(double h, double p) {
     double sum = 0.0, tmp = h * p;
     while (tmp >= TOL) {

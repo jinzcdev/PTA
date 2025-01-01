@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/994805269828059136
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=994805269828059136
 #include <cstdio>
 const int maxn = 10010;
 int rank[maxn];

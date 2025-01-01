@@ -1,12 +1,4 @@
-// https://pintia.cn/problem-sets/16/exam/problems/682
-// 4 2
-// 3 1 4 2
-// 3 4 1 2
-// 3 2 4 1
-// 2 1
-// 2 1
-// 1 2
-// 0
+// https://pintia.cn/problem-sets/16/exam/problems/type/7?problemSetProblemId=682
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 20;

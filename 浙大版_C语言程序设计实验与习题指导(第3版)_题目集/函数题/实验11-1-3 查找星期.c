@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/590
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=590
 int getindex(char *s) {
     if (!strcmp(s, "Sunday")) return 0;
     if (!strcmp(s, "Monday")) return 1;

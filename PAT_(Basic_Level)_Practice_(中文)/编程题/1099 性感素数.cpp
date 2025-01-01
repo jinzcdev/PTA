@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/994805260223102976/exam/problems/1478633879405998080
+// https://pintia.cn/problem-sets/994805260223102976/exam/problems/type/7?problemSetProblemId=1478633879405998080
 #include <cstdio>
 bool isprime(int x) {
     if (x <= 1) return false;

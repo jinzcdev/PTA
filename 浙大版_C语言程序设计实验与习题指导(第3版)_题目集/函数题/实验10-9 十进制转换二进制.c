@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/580
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=580
 void dectobin(int n) {
     if (n == 0) {
         printf("0");

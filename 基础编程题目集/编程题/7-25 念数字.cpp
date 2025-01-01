@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/805
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=805
 #include <iostream>
 using namespace std;
 int main() {

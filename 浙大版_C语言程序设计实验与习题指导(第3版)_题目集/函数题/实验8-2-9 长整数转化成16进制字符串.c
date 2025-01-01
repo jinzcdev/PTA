@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/13/exam/problems/542
+// https://pintia.cn/problem-sets/13/exam/problems/type/6?problemSetProblemId=542
 void f(long int x, char *p) {
     if (x == 0) {
         p[0] = '0';

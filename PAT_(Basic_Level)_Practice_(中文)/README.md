@@ -1,5 +1,5 @@
 
-## 编程题 (115/115)
+## 编程题 (125/125)
 
 - [1001. 害死人不偿命的(3n+1)猜想](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1001%20%E5%AE%B3%E6%AD%BB%E4%BA%BA%E4%B8%8D%E5%81%BF%E5%91%BD%E7%9A%84%283n%2B1%29%E7%8C%9C%E6%83%B3.cpp)
 - [1002. 写出这个数](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1002%20%E5%86%99%E5%87%BA%E8%BF%99%E4%B8%AA%E6%95%B0.cpp)
@@ -116,3 +116,13 @@
 - [1113. 钱串子的加法](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1113%20%E9%92%B1%E4%B8%B2%E5%AD%90%E7%9A%84%E5%8A%A0%E6%B3%95.cpp)
 - [1114. 全素日](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1114%20%E5%85%A8%E7%B4%A0%E6%97%A5.cpp)
 - [1115. 裁判机](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1115%20%E8%A3%81%E5%88%A4%E6%9C%BA.cpp)
+- [1116. 多二了一点](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1116%20%E5%A4%9A%E4%BA%8C%E4%BA%86%E4%B8%80%E7%82%B9.cpp)
+- [1117. 数字之王](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1117%20%E6%95%B0%E5%AD%97%E4%B9%8B%E7%8E%8B.cpp)
+- [1118. 如需挪车请致电](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1118%20%E5%A6%82%E9%9C%80%E6%8C%AA%E8%BD%A6%E8%AF%B7%E8%87%B4%E7%94%B5.cpp)
+- [1119. 胖达与盆盆奶](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1119%20%E8%83%96%E8%BE%BE%E4%B8%8E%E7%9B%86%E7%9B%86%E5%A5%B6.cpp)
+- [1120. 买地攻略](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1120%20%E4%B9%B0%E5%9C%B0%E6%94%BB%E7%95%A5.cpp)
+- [1121. 祖传好运](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1121%20%E7%A5%96%E4%BC%A0%E5%A5%BD%E8%BF%90.cpp)
+- [1122. 找奇葩](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1122%20%E6%89%BE%E5%A5%87%E8%91%A9.cpp)
+- [1123. 舍入](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1123%20%E8%88%8D%E5%85%A5.cpp)
+- [1124. 最近的斐波那契数](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1124%20%E6%9C%80%E8%BF%91%E7%9A%84%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0.cpp)
+- [1125. 子串与子列](https://github.com/jinzcdev/PTA/blob/main/PAT_%28Basic_Level%29_Practice_%28%E4%B8%AD%E6%96%87%29/%E7%BC%96%E7%A8%8B%E9%A2%98/1125%20%E5%AD%90%E4%B8%B2%E4%B8%8E%E5%AD%90%E5%88%97.cpp)

@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/727
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=727
 ElementType FindKth( List L, int K ) {
     if (K < 1) return ERROR;
     int cnt = 0;

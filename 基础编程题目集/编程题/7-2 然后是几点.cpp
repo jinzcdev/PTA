@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/782
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=782
 #include <cstdio>
 int main() {
     int a, b, m;

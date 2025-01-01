@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/12/exam/problems/342
+// https://pintia.cn/problem-sets/12/exam/problems/type/6?problemSetProblemId=342
 bool palindrome( char *s ) {
     int len = strlen(s);
     for (int i = 0; i < len / 2; i++)

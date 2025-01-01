@@ -1,19 +1,19 @@
-// https://pintia.cn/problem-sets/994805342720868352/exam/problems/994805489282433024
+// https://pintia.cn/problem-sets/994805342720868352/exam/problems/type/7?problemSetProblemId=994805489282433024
 #include <cstdio>
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int maxn = 510;
+const int N = 510;
 const int INF = 0x7FFFFFFF;
-int G[maxn][maxn], weight[maxn];
-int d[maxn], vis[maxn] = {false};
+int G[N][N], weight[N];
+int d[N], vis[N] = {false};
 int c, n, sp, m;
 int st = 0, ed;
-vector<int> pre[maxn];
+vector<int> pre[N];
 vector<int> path, tempPath;
 
-void Dijkstra(int s) {
-    fill(d, d + maxn, INF);
+void dijkstra(int s) {
+    fill(d, d + N, INF);
     d[s] = 0;
     for (int i = 0; i <= n; i++) {
         int u = -1, MIN = INF;
@@ -39,7 +39,7 @@ void Dijkstra(int s) {
     }
 }
 int minNeed = INF, minRemain = INF;
-void DFS(int v) {
+void dfs(int v) {
     if (v == st) {
         tempPath.push_back(v);
         int remain = 0, need = 0;
@@ -68,14 +68,14 @@ void DFS(int v) {
     }
     tempPath.push_back(v);
     for (int i = 0; i < pre[v].size(); i++) {
-        DFS(pre[v][i]);
+        dfs(pre[v][i]);
     }
     tempPath.pop_back();
 }
 
 int main(){
     scanf("%d%d%d%d", &c, &n, &sp, &m);
-    fill(G[0], G[0] + maxn * maxn, INF);
+    fill(G[0], G[0] + N * N, INF);
     for (int i = 1; i <= n; i++) {
         scanf("%d", &weight[i]);
         weight[i] -= c / 2;
@@ -86,8 +86,8 @@ int main(){
         scanf("%d", &G[u][v]);
         G[v][u] = G[u][v];
     }
-    Dijkstra(st);
-    DFS(sp);
+    dijkstra(st);
+    dfs(sp);
     printf("%d ", minNeed);
     for (int i = path.size() - 1; i >= 0; i--) {
         if (i != path.size() - 1) printf("->");

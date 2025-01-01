@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/15/exam/problems/730
+// https://pintia.cn/problem-sets/15/exam/problems/type/6?problemSetProblemId=730
 Stack CreateStack(int MaxSize) {
     Stack S = (Stack)malloc(sizeof(struct SNode));
     S->Data = (ElementType *)malloc(sizeof(ElementType) * MaxSize);
@@ -12,8 +12,10 @@ bool Push(Stack S, ElementType X, int Tag) {
         printf("Stack Full\n");
         return false;
     }
-    if (Tag == 1) S->Data[++S->Top1] = X;
-    else S->Data[--S->Top2] = X;
+    if (Tag == 1)
+        S->Data[++S->Top1] = X;
+    else
+        S->Data[--S->Top2] = X;
     return true;
 }
 ElementType Pop(Stack S, int Tag) {

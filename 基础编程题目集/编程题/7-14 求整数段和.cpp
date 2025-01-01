@@ -1,4 +1,4 @@
-// https://pintia.cn/problem-sets/14/exam/problems/794
+// https://pintia.cn/problem-sets/14/exam/problems/type/7?problemSetProblemId=794
 #include <cstdio>
 int main() {
     int a, b, sum = 0, cnt = 0;
